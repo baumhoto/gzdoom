@@ -29,6 +29,9 @@
 #include "hw_cvars.h"
 #include "templates.h"
 
+//baumhoto added line below as it was defined in gl_renderbuffers
+CVAR(Int, gl_multisample, 1, CVAR_ARCHIVE|CVAR_GLOBALCONFIG)
+
 VkRenderBuffers::VkRenderBuffers()
 {
 }

@@ -3732,7 +3732,8 @@ void D_Cleanup()
 	M_ClearMenus();					// close menu if open
 	F_EndFinale();					// If an intermission is active, end it now
 	AM_ClearColorsets();
-	DeinitSWColorMaps();
+
+	//baumhoto DeinitSWColorMaps();
 	FreeSBarInfoScript();
 	
 	// clean up game state

@@ -38,7 +38,8 @@
 #include "filesystem.h"
 #include "templates.h"
 
-EXTERN_CVAR(Int, gl_dither_bpc)
+//baumhoto replaced this line with below EXTERN_CVAR(Int, gl_dither_bpc)
+CVAR(Int, gl_dither_bpc, 0, CVAR_ARCHIVE | CVAR_GLOBALCONFIG | CVAR_NOINITCALL)
 
 VkPostprocess::VkPostprocess()
 {

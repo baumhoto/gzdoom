@@ -55,3 +55,5 @@ EXTERN_CVAR(Int, gl_shadowmap_filter)
 EXTERN_CVAR(Bool, gl_brightfog)
 EXTERN_CVAR(Bool, gl_lightadditivesurfaces)
 EXTERN_CVAR(Bool, gl_notexturefill)
+
+//CVAR(Int, gl_multisample, 1, CVAR_ARCHIVE|CVAR_GLOBALCONFIG)

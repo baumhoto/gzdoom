@@ -80,7 +80,7 @@ EXTERN_CVAR(Int, in_mouse)
 
 FGameConfigFile::FGameConfigFile ()
 {
-#ifdef __APPLE__
+#ifdef defined(__APPLE__) && defined(!IOS) 
 	FString user_docs, user_app_support, local_app_support;
 	M_GetMacSearchDirectories(user_docs, user_app_support, local_app_support);
 #endif
@@ -105,7 +105,7 @@ FGameConfigFile::FGameConfigFile ()
 		SetSection ("IWADSearch.Directories", true);
 		SetValueForKey ("Path", ".", true);
 		SetValueForKey ("Path", "$DOOMWADDIR", true);
-#ifdef __APPLE__
+#ifdef defined(__APPLE__) && defined(!IOS) 
 		SetValueForKey ("Path", user_docs, true);
 		SetValueForKey ("Path", user_app_support, true);
 		SetValueForKey ("Path", "$PROGDIR", true);
@@ -129,7 +129,7 @@ FGameConfigFile::FGameConfigFile ()
 	if (!SetSection ("FileSearch.Directories"))
 	{
 		SetSection ("FileSearch.Directories", true);
-#ifdef __APPLE__
+#ifdef defined(__APPLE__) && defined(!IOS) 
 		SetValueForKey ("Path", user_docs, true);
 		SetValueForKey ("Path", user_app_support, true);
 		SetValueForKey ("Path", "$PROGDIR", true);
@@ -151,7 +151,7 @@ FGameConfigFile::FGameConfigFile ()
 	if (!SetSection("SoundfontSearch.Directories"))
 	{
 		SetSection("SoundfontSearch.Directories", true);
-#ifdef __APPLE__
+#ifdef defined(__APPLE__) && defined(!IOS) 
 		SetValueForKey("Path", user_docs + "/soundfonts", true);
 		SetValueForKey("Path", user_docs + "/fm_banks", true);
 		SetValueForKey("Path", user_app_support + "/soundfonts", true);

@@ -44,6 +44,7 @@
 #include "engineerrors.h"
 #include "v_text.h"
 
+
 bool I_GetVulkanPlatformExtensions(unsigned int *count, const char **names);
 bool I_CreateVulkanSurface(VkInstance instance, VkSurfaceKHR *surface);
 

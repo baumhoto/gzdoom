@@ -172,19 +172,20 @@ TArray<FString> I_GetSteamPath()
 	// we need to figure out on an app-by-app basis where the game is installed.
 	// To do so, we read the virtual registry.
 #ifdef __APPLE__
-	const FString appSupportPath = M_GetMacAppSupportPath();
-	FString regPath = appSupportPath + "/Steam/config/config.vdf";
-	try
-	{
-		SteamInstallFolders = ParseSteamRegistry(regPath);
-	}
-	catch(class CRecoverableError &error)
-	{
-		// If we can't parse for some reason just pretend we can't find anything.
-		return result;
-	}
-
-	SteamInstallFolders.Push(appSupportPath + "/Steam/SteamApps/common");
+// baumhoto
+//	const FString appSupportPath = M_GetMacAppSupportPath();
+//	FString regPath = appSupportPath + "/Steam/config/config.vdf";
+//	try
+//	{
+//		SteamInstallFolders = ParseSteamRegistry(regPath);
+//	}
+//	catch(class CRecoverableError &error)
+//	{
+//		// If we can't parse for some reason just pretend we can't find anything.
+//		return result;
+//	}
+//
+//	SteamInstallFolders.Push(appSupportPath + "/Steam/SteamApps/common");
 #else
 	char* home = getenv("HOME");
 	if(home != NULL && *home != '\0')

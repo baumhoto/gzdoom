@@ -64,7 +64,7 @@
 bool I_GtkAvailable ();
 int I_PickIWad_Gtk (WadStuff *wads, int numwads, bool showwin, int defaultiwad);
 void I_ShowFatalError_Gtk(const char* errortext);
-#elif defined(__APPLE__)
+#elif defined(__APPLE__) && !IOS
 int I_PickIWad_Cocoa (WadStuff *wads, int numwads, bool showwin, int defaultiwad);
 #endif
 
@@ -298,7 +298,7 @@ int I_PickIWad (WadStuff *wads, int numwads, bool showwin, int defaultiwad)
 	}
 #endif
 
-#ifdef __APPLE__
+#ifdef defined(__APPLE__) && defined(!IOS)
 	return I_PickIWad_Cocoa (wads, numwads, showwin, defaultiwad);
 #endif
 	
