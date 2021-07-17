@@ -1,5 +1,7 @@
 #pragma once
 
+#ifdef __cplusplus
+
 #include <algorithm>
 #include <stdint.h>
 
@@ -98,3 +100,5 @@ constexpr inline int Luminance(int r, int g, int b)
 #define BPART(c)			((c)&0xff) 
 #define MAKERGB(r,g,b)		uint32_t(((r)<<16)|((g)<<8)|(b))
 #define MAKEARGB(a,r,g,b)	uint32_t(((a)<<24)|((r)<<16)|((g)<<8)|(b)) 
+
+#endif

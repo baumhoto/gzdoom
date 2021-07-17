@@ -890,8 +890,8 @@ typedef unsigned __int64 uint64_t;
 #include <stdlib.h>
 #include <string.h>
 
-#include <algorithm>
-#include <new>
+//#include <algorithm>
+//#include <new>
 
 #if ASMJIT_OS_POSIX
 # include <pthread.h>

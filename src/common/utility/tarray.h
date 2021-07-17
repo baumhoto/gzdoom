@@ -47,6 +47,7 @@
 **
 */
 
+#ifdef __cplusplus
 
 #include <stdlib.h>
 #include <assert.h>
@@ -1778,3 +1779,5 @@ private:
 	T *Array;
 	unsigned int Count;
 };
+
+#endif

@@ -43,7 +43,7 @@
 #include "a_pickups.h"
 #include "thingdef.h"
 #include "codegen.h"
-#include "backend/codegen_doom.h"
+#include "codegen_doom.h"
 
 extern FRandom pr_exrandom;
 

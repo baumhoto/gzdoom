@@ -9,7 +9,7 @@
 #define _ASMJIT_BASE_GLOBALS_H
 
 // [Dependencies]
-#include "../asmjit_build.h"
+#include "../asmjit_build.hpp"
 
 // [Api-Begin]
 #include "../asmjit_apibegin.h"

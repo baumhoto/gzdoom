@@ -12,6 +12,7 @@
 #include "tarray.h"
 #include "cmdlib.h"
 #include "zstring.h"
+#include "common.h"
 #include "resourcefile.h"
 
 class FResourceFile;

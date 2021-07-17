@@ -1,7 +1,7 @@
 #ifndef P_CONVERSATION_H
 #define P_CONVERSATION_H 1
 
-#include <tarray.h>
+#include "tarray.h"
 
 #include "s_sound.h"
 #include "textures.h"

@@ -1,5 +1,6 @@
 #pragma once
 
+#ifdef __cplusplus
 #include "zstring.h"
 
 enum EScopeFlags
@@ -68,3 +69,4 @@ struct FScopeBarrier
 
 };
 
+#endif

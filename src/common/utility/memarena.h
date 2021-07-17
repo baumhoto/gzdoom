@@ -36,6 +36,9 @@
 
 #include "zstring.h"
 
+#ifdef __cplusplus
+
+
 // A general purpose arena.
 class FMemArena
 {
@@ -89,5 +92,7 @@ private:
 	void *Alloc(size_t size) { return NULL; }	// No access to FMemArena::Alloc for outsiders.
 };
 
+
+#endif
 
 #endif

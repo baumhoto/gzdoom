@@ -1,5 +1,6 @@
 #ifndef ZCC_PARSER_H
 #define ZCC_PARSER_H
+#ifdef __cplusplus
 
 #include "memarena.h"
 #include "sc_man.h"
@@ -620,5 +621,7 @@ ZCC_TreeNode *TreeNodeDeepCopy(ZCC_AST *ast, ZCC_TreeNode *orig, bool copySiblin
 
 // Main entry point for the parser. Returns some data needed by the compiler.
 PNamespace* ParseOneScript(const int baselump, ZCCParseState& state);
+
+#endif
 
 #endif

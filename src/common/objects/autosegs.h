@@ -35,6 +35,7 @@
 #ifndef AUTOSEGS_H
 #define AUTOSEGS_H
 
+#ifdef __cplusplus
 #include <type_traits>
 
 #if defined(__clang__)
@@ -167,6 +168,8 @@ namespace AutoSegs
 #define SECTION_FREG AUTOSEG_STR(AUTOSEG_FREG)
 #define SECTION_GREG AUTOSEG_STR(AUTOSEG_GREG)
 #define SECTION_YREG AUTOSEG_STR(AUTOSEG_YREG)
+#endif
+
 #endif
 
 #endif

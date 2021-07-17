@@ -34,6 +34,7 @@
 #ifndef __DOBJECT_H__
 #define __DOBJECT_H__
 
+#ifdef __cplusplus
 #include <stdlib.h>
 #include <type_traits>
 #include "m_alloc.h"
@@ -472,3 +473,6 @@ inline T *&DObject::PointerVar(FName field)
 }
 
 #endif //__DOBJECT_H__
+
+
+#endif

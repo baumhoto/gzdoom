@@ -142,7 +142,7 @@ static void gdb_info(pid_t pid)
 		printf("Executing: %s\n", cmd_buf);
 		fflush(stdout);
 
-		system(cmd_buf);
+		//baumhoto system(cmd_buf);
 		/* Clean up */
 		remove(respfile);
 	}
@@ -373,7 +373,7 @@ static void crash_handler(const char *logfile)
 		else
 			snprintf(buf, sizeof(buf), "xmessage -buttons \"Okay:0\" -center -file \"%s\"", logfile);
 
-		system(buf);
+		//baumhoto system(buf);
 	}
 	exit(0);
 }

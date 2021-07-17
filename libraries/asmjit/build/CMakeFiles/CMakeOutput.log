@@ -1,0 +1,392 @@
+The system is: Darwin - 21.0.0 - arm64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is AppleClang, found in "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CMakeCCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_48601/fast && /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_48601.dir/build.make CMakeFiles/cmTC_48601.dir/build
+Building C object CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c
+Apple clang version 13.0.0 (clang-1300.0.25.3)
+Target: arm64-apple-darwin21.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.0 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 709.1 -v -resource-dir /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/local/include -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+nullptrToBoolConversion -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNeonImmediateRangeCheck -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+revert09abecef7bbf -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 13.0.0 (clang-1300.0.25.3) default target arm64-apple-darwin21.0.0
+ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_48601
+/opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48601.dir/link.txt --verbose=1
+/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -o cmTC_48601 
+Apple clang version 13.0.0 (clang-1300.0.25.3)
+Target: arm64-apple-darwin21.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.0 -syslibroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -o cmTC_48601 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-709.1
+BUILD 04:39:36 Jul  6 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include]
+    add: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include]
+    add: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include]
+  collapse include dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include]
+  collapse include dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  implicit include dirs: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include;/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include;/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_48601/fast && /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_48601.dir/build.make CMakeFiles/cmTC_48601.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Apple clang version 13.0.0 (clang-1300.0.25.3)]
+  ignore line: [Target: arm64-apple-darwin21.0.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.0 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debugger-tuning=lldb -target-linker-version 709.1 -v -resource-dir /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/local/include -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+nullptrToBoolConversion -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNeonImmediateRangeCheck -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+revert09abecef7bbf -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 13.0.0 (clang-1300.0.25.3) default target arm64-apple-darwin21.0.0]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_48601]
+  ignore line: [/opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48601.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -o cmTC_48601 ]
+  ignore line: [Apple clang version 13.0.0 (clang-1300.0.25.3)]
+  ignore line: [Target: arm64-apple-darwin21.0.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  link line: [ "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.0.0 12.0 -syslibroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -o cmTC_48601 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [arm64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [12.0.0] ==> ignore
+    arg [12.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_48601] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_48601.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
+
+
+The system is: Darwin - 21.0.0 - arm64
+The system is: Darwin - 21.0.0 - arm64
+The target system is: iOS - 15.0 - aarch64
+The host system is: Darwin - 21.0.0 - arm64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+2021-07-16 13:12:56.100 xcodebuild[19793:262086] [MT] PluginLoading: Required plug-in compatibility UUID 42E1F17B-27B3-4DE8-92A8-DC76BA4F5921 for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XVim2.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+Command line invocation:
+    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/xcodebuild
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: e3576b5b34bcbe3ddc8fe1f0a82872ae
+Build description path: /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/./XCBuildData/e3576b5b34bcbe3ddc8fe1f0a82872ae-desc.xcbuild
+
+note: Build preparation complete
+warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+CreateBuildDirectory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xcodeproj
+    builtin-create-build-directory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+
+warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
+MkDir /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    /bin/mkdir -p /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/all-product-headers.yaml (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC.hmap
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-project-headers.hmap
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-generated-files.hmap
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
+
+CompileC /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    export LANG\=en_US.US-ASCII
+    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-ios15.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/include -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/DerivedSources/arm64 -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/DerivedSources -F/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC -iframework /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -iframework /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/Developer/Library/Frameworks -MMD -MT dependencies -MF /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CMakeCCompilerId.c -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
+
+Ld /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest/CompilerIdC normal (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-ios15.0 -bundle -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -L/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC -L/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC -iframework /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -iframework /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/Developer/Library/Frameworks -filelist /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -framework XCTest -Xlinker -dependency_info -Xlinker /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest/CompilerIdC
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+GenerateDSYMFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest.dSYM /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest/CompilerIdC -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest.dSYM
+
+PhaseScriptExecution Run\ Script /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    /bin/sh -c /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.build/Debug-iphoneos/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+ARCHS=arm64
+
+RegisterExecutionPolicyException /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    builtin-RegisterExecutionPolicyException /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest
+
+Touch /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest (in target 'CompilerIdC' from project 'CompilerIdC')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC
+    /usr/bin/touch -c /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.xctest/CompilerIdC"
+
+The C compiler identification is AppleClang, found in "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/3.20.5/CompilerIdC/CompilerIdC.xctest/CompilerIdC"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9c6f8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2021-07-16 13:12:57.510 xcodebuild[19820:262287] [MT] PluginLoading: Required plug-in compatibility UUID 42E1F17B-27B3-4DE8-92A8-DC76BA4F5921 for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XVim2.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+Command line invocation:
+    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9c6f8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+    IDEPackageSupportUseBuiltinSCM = YES
+
+note: Using new build system
+note: Planning
+Analyze workspace
+
+Create build description
+Build description signature: 8e6f998e2117b00ccb5890f4903429f9
+Build description path: /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/build/XCBuildData/8e6f998e2117b00ccb5890f4903429f9-desc.xcbuild
+
+note: Build preparation complete
+note: Building targets in parallel
+CreateBuildDirectory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp
+
+CreateBuildDirectory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
+    builtin-create-build-directory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug
+
+CompileC /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.o /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_9c6f8' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp
+    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-ios11.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug-iphoneos\" -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources-normal/arm64 -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources/arm64 -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources -F/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug -fvisibility\=hidden -v -Wl,-v -MMD -MT dependencies -MF /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.o
+Apple clang version 13.0.0 (clang-1300.0.25.3)
+Target: arm64-apple-ios11.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-ios11.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a7 -target-feature +fp-armv8 -target-feature +neon -target-feature +crypto -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 709.1 -v -resource-dir /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0 -dependency-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -D "CMAKE_INTDIR=\"Debug-iphoneos\"" -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/include -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources-normal/arm64 -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources/arm64 -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources -F/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/local/include -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmacro-backtrace-limit 0 -fvisibility hidden -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+nullptrToBoolConversion -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNeonImmediateRangeCheck -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+revert09abecef7bbf -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.o -x c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 13.0.0 (clang-1300.0.25.3) default target arm64-apple-darwin21.0.0
+ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/include"
+ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources-normal/arm64"
+ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources/arm64"
+ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources"
+ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/local/include"
+ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug (framework directory)
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+
+WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8.LinkFileList (in target 'cmTC_9c6f8' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp
+    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8.LinkFileList
+
+Libtool /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/libcmTC_9c6f8.a normal (in target 'cmTC_9c6f8' from project 'CMAKE_TRY_COMPILE')
+    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp
+    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -L/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8.LinkFileList -dependency_info /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8_libtool_dependency_info.dat -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/libcmTC_9c6f8.a
+
+** BUILD SUCCEEDED **
+
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include]
+    add: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include]
+    add: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include]
+  collapse include dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include]
+  collapse include dir [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  implicit include dirs: [/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include;/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include;/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9c6f8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2021-07-16 13:12:57.510 xcodebuild[19820:262287] [MT] PluginLoading: Required plug-in compatibility UUID 42E1F17B-27B3-4DE8-92A8-DC76BA4F5921 for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XVim2.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [Command line invocation:]
+  ignore line: [    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_9c6f8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
+  ignore line: []
+  ignore line: [User defaults from command line:]
+  ignore line: [    HideShellScriptEnvironment = YES]
+  ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
+  ignore line: []
+  ignore line: [note: Using new build system]
+  ignore line: [note: Planning]
+  ignore line: [Analyze workspace]
+  ignore line: []
+  ignore line: [Create build description]
+  ignore line: [Build description signature: 8e6f998e2117b00ccb5890f4903429f9]
+  ignore line: [Build description path: /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/build/XCBuildData/8e6f998e2117b00ccb5890f4903429f9-desc.xcbuild]
+  ignore line: []
+  ignore line: [note: Build preparation complete]
+  ignore line: [note: Building targets in parallel]
+  ignore line: [CreateBuildDirectory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp]
+  ignore line: [    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj]
+  ignore line: [    builtin-create-build-directory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [CreateBuildDirectory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug]
+  ignore line: [    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj]
+  ignore line: [    builtin-create-build-directory /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug]
+  ignore line: []
+  ignore line: [CompileC /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.o /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_9c6f8' from project 'CMAKE_TRY_COMPILE')]
+  ignore line: [    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp]
+  ignore line: [    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-ios11.0 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug-iphoneos\" -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources-normal/arm64 -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources/arm64 -I/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources -F/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug -fvisibility\=hidden -v -Wl -v -MMD -MT dependencies -MF /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.o]
+  ignore line: [Apple clang version 13.0.0 (clang-1300.0.25.3)]
+  ignore line: [Target: arm64-apple-ios11.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-ios11.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=15.0 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-a7 -target-feature +fp-armv8 -target-feature +neon -target-feature +crypto -target-feature +zcm -target-feature +zcz -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 709.1 -v -resource-dir /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0 -dependency-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -D "CMAKE_INTDIR=\"Debug-iphoneos\"" -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/include -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources-normal/arm64 -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources/arm64 -I /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources -F/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/local/include -internal-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include -internal-externc-isystem /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdebug-compilation-dir /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmacro-backtrace-limit 0 -fvisibility hidden -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+nullptrToBoolConversion -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNeonImmediateRangeCheck -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+revert09abecef7bbf -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/CMakeCCompilerABI.o -x c /opt/homebrew/Cellar/cmake/3.20.5/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 13.0.0 (clang-1300.0.25.3) default target arm64-apple-darwin21.0.0]
+  ignore line: [ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/include"]
+  ignore line: [ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources-normal/arm64"]
+  ignore line: [ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources/arm64"]
+  ignore line: [ignoring nonexistent directory "/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/DerivedSources"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug (framework directory)]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: []
+  ignore line: [WriteAuxiliaryFile /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8.LinkFileList (in target 'cmTC_9c6f8' from project 'CMAKE_TRY_COMPILE')]
+  ignore line: [    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp]
+  ignore line: [    write-file /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8.LinkFileList]
+  ignore line: []
+  ignore line: [Libtool /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/libcmTC_9c6f8.a normal (in target 'cmTC_9c6f8' from project 'CMAKE_TRY_COMPILE')]
+  ignore line: [    cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp]
+  ignore line: [    /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk -L/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8.LinkFileList -dependency_info /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug-iphoneos/cmTC_9c6f8.build/Objects-normal/arm64/cmTC_9c6f8_libtool_dependency_info.dat -o /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/CMakeTmp/Debug/libcmTC_9c6f8.a]
+  ignore line: []
+  ignore line: [** BUILD SUCCEEDED **]
+  ignore line: []
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+

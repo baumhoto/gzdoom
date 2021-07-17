@@ -49,7 +49,7 @@
 #include "g_levellocals.h"
 #include "info.h"
 #include "vm.h"
-#include "xlat/xlat.h"
+#include "xlat.h"
 #include "maploader.h"
 #include "texturemanager.h"
 

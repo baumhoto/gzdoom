@@ -35,6 +35,8 @@
 #ifndef __PARSECONTEST__H_
 #define __PARSECONTEST__H_
 
+#ifdef __cplusplus
+
 #include "tarray.h"
 
 // The basic tokens the parser requires the grammar to understand
@@ -151,5 +153,7 @@ struct FParseContext
 	void ParseLump(const char *lumpname);
 };
 
+
+#endif
 
 #endif

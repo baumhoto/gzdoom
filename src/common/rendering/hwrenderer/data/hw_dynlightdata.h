@@ -23,6 +23,10 @@
 #ifndef __GLC_DYNLIGHT_H
 #define __GLC_DYNLIGHT_H
 
+#ifdef __cplusplus
+
+#import "tarray.h"
+
 struct FDynLightData
 {
 	TArray<float> arrays[3];
@@ -55,5 +59,7 @@ struct FDynLightData
 
 extern thread_local FDynLightData lightdata;
 
+
+#endif
 
 #endif

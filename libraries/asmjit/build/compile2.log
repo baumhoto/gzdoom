@@ -1,0 +1,6 @@
+/opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -S/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit -B/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build --check-build-system CMakeFiles/Makefile.cmake 0
+/opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -E cmake_progress_start /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build//CMakeFiles/progress.marks
+/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/make -s -f CMakeFiles/Makefile2 all
+/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/make -s -f CMakeFiles/asmjit.dir/build.make CMakeFiles/asmjit.dir/depend
+cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build && /opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -E cmake_depends "Unix Makefiles" /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/asmjit.dir/DependInfo.cmake --color=
+/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/usr/bin/make -s -f CMakeFiles/asmjit.dir/build.make CMakeFiles/asmjit.dir/build

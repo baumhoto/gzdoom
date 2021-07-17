@@ -48,7 +48,7 @@
 #include "s_sound.h"
 #include "sbar.h"
 #include "g_level.h"
-#include "r_data/sprites.h"
+#include "sprites.h"
 
 struct VoxelOptions
 {

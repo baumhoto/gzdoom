@@ -1,6 +1,6 @@
 #ifndef __SERIALIZER_H
 #define __SERIALIZER_H
-
+#ifdef __cplusplus
 #include <stdint.h>
 #include <type_traits>
 #include "tarray.h"
@@ -377,4 +377,5 @@ inline SaveRecord::SaveRecord(const char* nm, void (*handler)(FSerializer& arc))
 FString DictionaryToString(const Dictionary &dict);
 Dictionary *DictionaryFromString(const FString &string);
 
+#endif
 #endif

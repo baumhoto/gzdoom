@@ -39,13 +39,13 @@
 
 #ifndef VECTORS_H
 #define VECTORS_H
-
+#ifdef __cplusplus
 #include <cstddef>
 #include <math.h>
 #include <float.h>
 #include <string.h>
 #include "xs_Float.h"
-#include "math/cmath.h"
+#include "cmath.h"
 
 
 #define EQUAL_EPSILON (1/65536.)
@@ -1684,4 +1684,5 @@ protected:
 	float m_d;
 };
 
+#endif
 #endif

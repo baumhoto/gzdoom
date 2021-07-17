@@ -34,6 +34,9 @@
 #ifndef NAME_H
 #define NAME_H
 
+#ifdef __cplusplus
+
+
 #include "tarray.h"
 #include "zstring.h"
 
@@ -134,4 +137,5 @@ template<> struct THashTraits<FName>
 	}
 	int Compare(FName left, FName right) { return left != right; }
 }; 
+#endif
 #endif

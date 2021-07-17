@@ -1,5 +1,8 @@
 #pragma once
 
+#ifdef __cplusplus
+
+
 #include <stddef.h>
 #include <stdint.h>
 #include <algorithm>
@@ -105,3 +108,5 @@ enum EStateUseFlags
 
 using std::min;
 using std::max;
+
+#endif

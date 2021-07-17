@@ -24,8 +24,8 @@
 
 //#include "swrenderer/drawers/r_draw.h"
 #include "r_thread.h"
-#include "polyrenderer/drawers/screen_triangle.h"
-#include "polyrenderer/drawers/poly_vertex_shader.h"
+#include "screen_triangle.h"
+#include "poly_vertex_shader.h"
 
 class DCanvas;
 class RenderMemory;

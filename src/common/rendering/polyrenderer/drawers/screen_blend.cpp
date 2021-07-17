@@ -21,6 +21,8 @@
 */
 
 #include "screen_blend.h"
+#include "renderstyle.h"
+#include "poly_thread.h"
 
 #ifndef NO_SSE
 #include <immintrin.h>

@@ -22,7 +22,7 @@
 #endif
 
 #ifndef VULKAN_H_
-#	include <vulkan/vulkan.h>
+#	include "vulkan.h"
 #endif
 
 #ifdef __cplusplus

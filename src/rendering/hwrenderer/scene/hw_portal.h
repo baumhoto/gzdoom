@@ -4,8 +4,8 @@
 #include "r_utility.h"
 #include "r_sections.h"
 #include "actor.h"
-#include "hwrenderer/scene/hw_drawinfo.h"
-#include "hwrenderer/scene/hw_drawstructs.h"
+#include "hw_drawinfo.h"
+#include "hw_drawstructs.h"
 #include "hw_renderstate.h"
 #include "hw_material.h"
 

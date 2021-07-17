@@ -1,6 +1,7 @@
 #ifndef __CMATH_H
 #define __CMATH_H
 
+#ifdef __cplusplus
 #include "xs_Float.h"
 
 #define USE_CUSTOM_MATH	// we want repreducably reliable results, even at the cost of performance
@@ -146,4 +147,5 @@ inline double cosdeg(double v)
 
 
 
+#endif
 #endif

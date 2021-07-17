@@ -1,5 +1,7 @@
 #pragma once
 
+#ifdef __cplusplus
+
 enum class ETextureType : uint8_t
 {
 	Any,
@@ -63,3 +65,4 @@ public:
 	FSetTextureID(int v) : FTextureID(v) {}
 };
 
+#endif

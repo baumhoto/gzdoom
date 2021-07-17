@@ -1,5 +1,6 @@
 #pragma once
 #include <stdarg.h>
+#include <stddef.h>
 
 #if defined __GNUC__ || defined __clang__
 # define ATTRIBUTE(attrlist) __attribute__(attrlist)
@@ -92,3 +93,4 @@ void debugprintf(const char* f, ...);	// Prints to the debugger's log.
 
 // flag to silence non-error output
 extern bool batchrun;
+

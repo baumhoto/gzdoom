@@ -1,6 +1,8 @@
 #ifndef __SC_MAN_H__
 #define __SC_MAN_H__
 
+#ifdef __cplusplus
+
 #include "zstring.h"
 #include "tarray.h"
 #include "name.h"
@@ -296,5 +298,7 @@ struct FScriptPosition
 
 int ParseHex(const char* hex, FScriptPosition* sc);
 
+
+#endif
 
 #endif //__SC_MAN_H__

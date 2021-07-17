@@ -63,6 +63,8 @@ enum
 //   Map                           *      *
 //   Prototype                     *+     *+
 
+#ifdef __cplusplus
+
 class PContainerType;
 class PPointer;
 class PClassPointer;
@@ -646,3 +648,4 @@ struct FTypeTable
 
 extern FTypeTable TypeTable;
 
+#endif

@@ -33,6 +33,7 @@
 */
 
 #include <algorithm>
+#include <float.h>
 #include "palutil.h"
 #include "palentry.h"
 #include "sc_man.h"

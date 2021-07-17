@@ -40,6 +40,8 @@
 //      SBarInfoCommandFlowControl which creates the instances of the following
 //      classes.
 ////////////////////////////////////////////////////////////////////////////////
+///
+///
 
 class CommandDrawImage : public SBarInfoCommandFlowControl
 {

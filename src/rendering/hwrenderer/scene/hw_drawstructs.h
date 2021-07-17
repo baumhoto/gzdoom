@@ -7,7 +7,7 @@
 #include "r_defs.h"
 #include "renderstyle.h"
 #include "textures.h"
-#include "r_data/colormaps.h"
+#include "colormaps.h"
 
 #ifdef _MSC_VER
 #pragma warning(disable:4244)

@@ -32,12 +32,14 @@
 **
 */
 
+#ifdef __cplusplus
+
 
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
 #include <stddef.h>
-#include <string>
+#include <string.h>
 #include "tarray.h"
 
 #ifdef __GNUC__
@@ -59,6 +61,13 @@
 
 #ifdef _WIN32
 std::wstring WideString(const char *);
+#endif
+
+#ifndef _MSC_VER
+#define stricmp strcasecmp
+#define strnicmp strncasecmp
+#define __forceinline inline
+
 #endif
 
 struct FStringData
@@ -481,3 +490,4 @@ struct StringNoCaseHashTraits
 	int Compare(const FString& left, const FString& right) { return left.CompareNoCase(right); }
 };
 
+#endif

@@ -38,7 +38,7 @@
 #include <vector>
 #include "i_soundinternal.h"
 #include "zstring.h"
-#include <zmusic.h>
+#include "zmusic.h"
 
 class FileReader;
 struct FSoundChan;

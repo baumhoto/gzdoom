@@ -3,7 +3,7 @@
 
 #include "tarray.h"
 #include "hw_dynlightdata.h"
-#include "hwrenderer/data/buffers.h"
+#include "buffers.h"
 #include <atomic>
 #include <mutex>
 

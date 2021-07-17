@@ -1,7 +1,7 @@
 #pragma once
 
 #include "matrix.h"
-#include "hwrenderer/data/buffers.h"
+#include "buffers.h"
 #include "hw_renderstate.h"
 #include "skyboxtexture.h"
 

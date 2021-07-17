@@ -26,7 +26,7 @@
 
 #include "c_cvars.h"
 #include "filesystem.h"
-#include "r_data/r_translate.h"
+#include "r_translate.h"
 #include "c_dispatch.h"
 #include "r_state.h"
 #include "actor.h"

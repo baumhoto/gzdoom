@@ -1,0 +1,1049 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		27BF695BD02B4B03AD4D9862 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A575360EBEB94D9F9BA02D5A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				9E16BA4E0E0AA6B8B86BF465 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		634E7748E0534021ACAD03BB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E4874FBA24D04AA2968E9243 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				A2C2FD30438E9E09AB6E59A1 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				49D5360E3E494D2B8ED976F5 /* PBXTargetDependency */,
+				FAA24F23931A4F2998EAC762 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		92FA01CFB5E9453DBA57CE3A /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DE90ECF6CEF04184A2D0D08B /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				CB79978A11844BACAB43ABA2 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		036BAFF574C84A02A421EE48 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc.cpp */ = {isa = PBXBuildFile; fileRef = 1BBB6D47CAAE46F7B56063CE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc.cpp */; };
+		03FC7C2391634FE1989623B8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.h */ = {isa = PBXBuildFile; fileRef = EF219055137741D8A844C33B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.h */; };
+		05F132962D214545A535CA7D /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.cpp */ = {isa = PBXBuildFile; fileRef = 04ECDFCA57114B039D55C516 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.cpp */; };
+		06776432013A4301A0DA4BD3 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apiend.h */ = {isa = PBXBuildFile; fileRef = 92875D92045B4082904C59CA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apiend.h */; };
+		0AB82B3375DE4DBAB4C3978B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.cpp */ = {isa = PBXBuildFile; fileRef = 7CC9ED7627B74060A26E4FE9 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.cpp */; };
+		0D749733252940808AC192D4 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/misc_p.h */ = {isa = PBXBuildFile; fileRef = 885409EEC75A4535AA2F3C2E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/misc_p.h */; };
+		1020326F2463475FA48F43BE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/asmjit.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = F3146A59E5D94E45A7C45788 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/asmjit.dir/Info.plist */; };
+		1A0782C2FF564605B542642F /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.cpp */ = {isa = PBXBuildFile; fileRef = 08070FE04D6A4865A3DF55C9 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.cpp */; };
+		22276C74CA934A13AF0DADDE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.h */ = {isa = PBXBuildFile; fileRef = A0E3319014C54E8BBC1CFD89 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.h */; };
+		34AAB53301BA474A8B306A99 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl_p.h */ = {isa = PBXBuildFile; fileRef = 9D71202CE8604CFAB79C49BA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl_p.h */; };
+		3FB711DF15274680996802B5 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.h */ = {isa = PBXBuildFile; fileRef = 8AC02E843EA64AE9902683AE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.h */; };
+		433C91EA1B454990A59422C6 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.cpp */ = {isa = PBXBuildFile; fileRef = BB9066B93BE94BB8B5D47E34 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.cpp */; };
+		461348FA5BA74E3484427CE9 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.h */ = {isa = PBXBuildFile; fileRef = 3D4EED42FF7544478740C0B2 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.h */; };
+		47B2CC7CFB464D3AABC2E0F4 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86.h */ = {isa = PBXBuildFile; fileRef = 2C8B02523E864F19A789014C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86.h */; };
+		48729357D31C4B878A1341AF /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc_p.h */ = {isa = PBXBuildFile; fileRef = 72ABAB2407EF4691B1225CE1 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc_p.h */; };
+		55C8176DB6F94C84969CD0D3 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.cpp */ = {isa = PBXBuildFile; fileRef = 68B2A2C86A5B44BCAE6878BF /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.cpp */; };
+		5FE5AA58D26441289B70C2AC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.cpp */ = {isa = PBXBuildFile; fileRef = 2D117A317EB741CC9EB4002A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.cpp */; };
+		658E49E981DF47F1B44AD080 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.cpp */ = {isa = PBXBuildFile; fileRef = 482B4097AD254FB3BCCC52E5 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.cpp */; };
+		65D90958973A4E4E8711530D /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.cpp */ = {isa = PBXBuildFile; fileRef = B976C4ED57364C69BC2F0800 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.cpp */; };
+		6C32E0787DAB4D73B6AF609A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/simdtypes.h */ = {isa = PBXBuildFile; fileRef = 88D0D09CC10E4C96876BF009 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/simdtypes.h */; };
+		71EC605FAED94BA7AFDB38C2 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.h */ = {isa = PBXBuildFile; fileRef = E558A9D44FE546A3B4F7C83A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.h */; };
+		74CC82C22EE64B9CAF884D9E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.cpp */ = {isa = PBXBuildFile; fileRef = BBB6E20C122D4B709BE9AA98 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.cpp */; };
+		785A6063F62A4932AA01856B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.h */ = {isa = PBXBuildFile; fileRef = CC90EE87DA8A4756A36F6B62 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.h */; };
+		7870C3C4AFA44762B7A76DCA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.h */ = {isa = PBXBuildFile; fileRef = 17C560E3B2554363BE47EEE8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.h */; };
+		7A0787F085F940709E02D8E8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.h */ = {isa = PBXBuildFile; fileRef = 635753415FAA4EC5B76BD0DB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.h */; };
+		7F7ADCCFFF20427AB266F0E8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_build.h */ = {isa = PBXBuildFile; fileRef = F917E9D2949C4B10828A8F35 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_build.h */; };
+		86E82A08771F47BFBA64DDC7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.h */ = {isa = PBXBuildFile; fileRef = E5B376A45D834C0990443D60 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.h */; };
+		8B3E09FA779D4496B23E81C2 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.cpp */ = {isa = PBXBuildFile; fileRef = 59BA0E154E054D4D83400B17 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.cpp */; };
+		8B7D328FF1F3480FB4E9E170 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.cpp */ = {isa = PBXBuildFile; fileRef = 0F1E2F3DBB1648ADAFEEFB14 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.cpp */; };
+		8CC5CFCF6504478088846DDC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc.cpp */ = {isa = PBXBuildFile; fileRef = E45156693C9A418A98F88EB5 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc.cpp */; };
+		8E7F598099744D169D33F663 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base.h */ = {isa = PBXBuildFile; fileRef = B4478F50F0794456BEFA5D51 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base.h */; };
+		944513BAD35742D29ED29C39 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.cpp */ = {isa = PBXBuildFile; fileRef = 3D3F6A874F0943CD9671EA98 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.cpp */; };
+		959C2DE732044621BC41A2C3 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.h */ = {isa = PBXBuildFile; fileRef = FD77C941737442AD876C3911 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.h */; };
+		9D0B3D765D1B4152BCE7424F /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging_p.h */ = {isa = PBXBuildFile; fileRef = DA42FF52049E4B1689AB1744 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging_p.h */; };
+		9DAC31CCC33D49ABBD869EBE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.h */ = {isa = PBXBuildFile; fileRef = 2C9B870F4B0049DDAE8423BA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.h */; };
+		A0C4A1633E464AC88EC3F346 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.cpp */ = {isa = PBXBuildFile; fileRef = 1AABC21CB6B14B3698E75FE3 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.cpp */; };
+		A46F22DE3C2E481CBA787817 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.h */ = {isa = PBXBuildFile; fileRef = 0E60A4AD3A014390AC85ED2B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.h */; };
+		A5810784AE8245DDB886369F /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.cpp */ = {isa = PBXBuildFile; fileRef = 980264FDCF0448929D9EAE18 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.cpp */; };
+		A5EE1269115342369843723D /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.h */ = {isa = PBXBuildFile; fileRef = 7F9C767CB27842129FE4938E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.h */; };
+		A68D079E3A8F46E5AC8037B0 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand_regs.cpp */ = {isa = PBXBuildFile; fileRef = 0FBF2DBC239244719A82F8E0 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand_regs.cpp */; };
+		A6C4CF157B9341B3947BB79E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86emitter.h */ = {isa = PBXBuildFile; fileRef = 9CA2D815E53E479AA0F087AC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86emitter.h */; };
+		AA7D4279829F4C81B3F59D30 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.cpp */ = {isa = PBXBuildFile; fileRef = C4CC34C3D5574F75BF28BA5E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.cpp */; };
+		AC9C96EB15794B0180FEFCC8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.h */ = {isa = PBXBuildFile; fileRef = F172E4DCFF4D413A899FC2AB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.h */; };
+		B2F77B82566049A0AF4E0EB1 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.h */ = {isa = PBXBuildFile; fileRef = A619229810F1436791A2E110 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.h */; };
+		B459F8D8CC3F4C06B58353DD /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86globals.h */ = {isa = PBXBuildFile; fileRef = F743CF9558B7455297DE736A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86globals.h */; };
+		B532C0DA5AFC441B8745D3CB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl.cpp */ = {isa = PBXBuildFile; fileRef = 0E06EA9A69444268B07EFE23 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl.cpp */; };
+		B5924B6B3EF24D79B089EC63 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal.cpp */ = {isa = PBXBuildFile; fileRef = A5D82AE1A7284BDB915BBEB1 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal.cpp */; };
+		B6E1911A6B9C46B284983453 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.h */ = {isa = PBXBuildFile; fileRef = 4081C42586DC438BB45AEE99 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.h */; };
+		B901F8F13C074A588436A3EC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.h */ = {isa = PBXBuildFile; fileRef = 88DB21B99F36435D8BB96C61 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.h */; };
+		BF0475B11F7F4A128E7A4FAC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging.cpp */ = {isa = PBXBuildFile; fileRef = FE4CB799AE0E4EFFACCB4028 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging.cpp */; };
+		C3D2BB45FF77440A8E2E2728 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.h */ = {isa = PBXBuildFile; fileRef = F038F576688644D3BEA3343E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.h */; };
+		C3E315E7A6F44112B15BCAC7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.h */ = {isa = PBXBuildFile; fileRef = E3A4C15FD6DD4221833A6F80 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.h */; };
+		C4A5FF35172A49B5802035CE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.h */ = {isa = PBXBuildFile; fileRef = 3F2CE77FAD784DBC8D2EE027 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.h */; };
+		C56F19AC1658467A95845F46 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.h */ = {isa = PBXBuildFile; fileRef = 6C39D09127AD4B0C843C059E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.h */; };
+		CB527582FB644587A60C21F7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.cpp */ = {isa = PBXBuildFile; fileRef = AEF4C96E99C648BC8B350800 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.cpp */; };
+		CE5B1149CB734F1697B0F469 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/arm.h */ = {isa = PBXBuildFile; fileRef = D080590DAE694B7F865E0935 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/arm.h */; };
+		CF4E876BC6CA4DC98ADC6D7A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.cpp */ = {isa = PBXBuildFile; fileRef = D40470A27941498F8B661717 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.cpp */; };
+		D134AF497B9A4538B48969A6 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.cpp */ = {isa = PBXBuildFile; fileRef = B4D7D4B570404E55AF36122C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.cpp */; };
+		D738AA7926C049259E8AF174 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.cpp */ = {isa = PBXBuildFile; fileRef = 9D51437877134A9EA59653ED /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.cpp */; };
+		D9676F21864F42519DCB7BE8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.cpp */ = {isa = PBXBuildFile; fileRef = 159B5E059B4349C18C24B817 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.cpp */; };
+		D9B2EC85494C47079046D8C8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.cpp */ = {isa = PBXBuildFile; fileRef = ED139DF912374B639B153053 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.cpp */; };
+		D9D727831B844D1CB8DED86F /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.cpp */ = {isa = PBXBuildFile; fileRef = E0599DCBDCFB40F190AD1C8A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.cpp */; };
+		DA8C0D3BC2224031948AD7D3 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.h */ = {isa = PBXBuildFile; fileRef = D85E550E393149B482C39CA0 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.h */; };
+		E176B03985364D5A97957117 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc_p.h */ = {isa = PBXBuildFile; fileRef = F5C25C3C15E44C68B7DB128F /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc_p.h */; };
+		E28FED2D76F84BF88E5D73C2 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.cpp */ = {isa = PBXBuildFile; fileRef = D0013305FB91458B94086F23 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.cpp */; };
+		E3F27FAAB6B348F5B8406032 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.cpp */ = {isa = PBXBuildFile; fileRef = 8318E0805EA844AA9FBF2B71 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.cpp */; };
+		E6A15F27A9B94EEBB4D9F2A2 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit.h */ = {isa = PBXBuildFile; fileRef = 57BC472A6CE04856AA9F862C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit.h */; };
+		EB070F7635E74EFAAEFD32EC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.h */ = {isa = PBXBuildFile; fileRef = F545A0FBE3974696B9E28F3A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.h */; };
+		EBAD7E202D1643E8981A24EB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86misc.h */ = {isa = PBXBuildFile; fileRef = 7ADF248530A54D6B8BAFF6B6 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86misc.h */; };
+		F1CF5B1134D24B2D8DE50831 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1FB689027CCE4B44BE0F6183 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/CMakeLists.txt */; };
+		F2995122BCA244B39E9F3A3E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.h */ = {isa = PBXBuildFile; fileRef = 66F8AC02F1E648B2905528E4 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.h */; };
+		FD10792604AB49B3978EC234 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal_p.h */ = {isa = PBXBuildFile; fileRef = 790D814C07E44E9D9955AEE7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal_p.h */; };
+		FD6A59BAC82648B895F292CF /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apibegin.h */ = {isa = PBXBuildFile; fileRef = B5EA3605A3004291B49952F7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apibegin.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0BC088CE9F0349C68BFD60E1 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		5749B50846344AC1B78892E5 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		9259971EA63F430BB805787F /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C1A11CC567104005B1A186AC /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		201B01E24D9449A8B168A02A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C9D690F71D4D5484B9C4D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 634E7748E0534021ACAD03BB;
+			remoteInfo = ALL_BUILD;
+		};
+		3DE8D88D127F49DABC4BFA5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C9D690F71D4D5484B9C4D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6117D3C621744C69861520C7;
+			remoteInfo = asmjit;
+		};
+		4E2666397D3C4CA18E3BF3D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C9D690F71D4D5484B9C4D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27BF695BD02B4B03AD4D9862;
+			remoteInfo = ZERO_CHECK;
+		};
+		645183B4FADF4E0F8D81C31B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C9D690F71D4D5484B9C4D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27BF695BD02B4B03AD4D9862;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04ECDFCA57114B039D55C516 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cpuinfo.cpp; path = asmjit/base/cpuinfo.cpp; sourceTree = SOURCE_ROOT; };
+		08070FE04D6A4865A3DF55C9 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = globals.cpp; path = asmjit/base/globals.cpp; sourceTree = SOURCE_ROOT; };
+		0E06EA9A69444268B07EFE23 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86instimpl.cpp; path = asmjit/x86/x86instimpl.cpp; sourceTree = SOURCE_ROOT; };
+		0E60A4AD3A014390AC85ED2B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = inst.h; path = asmjit/base/inst.h; sourceTree = SOURCE_ROOT; };
+		0F1E2F3DBB1648ADAFEEFB14 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = codecompiler.cpp; path = asmjit/base/codecompiler.cpp; sourceTree = SOURCE_ROOT; };
+		0FBF2DBC239244719A82F8E0 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand_regs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86operand_regs.cpp; path = asmjit/x86/x86operand_regs.cpp; sourceTree = SOURCE_ROOT; };
+		159B5E059B4349C18C24B817 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86operand.cpp; path = asmjit/x86/x86operand.cpp; sourceTree = SOURCE_ROOT; };
+		17C560E3B2554363BE47EEE8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operand.h; path = asmjit/base/operand.h; sourceTree = SOURCE_ROOT; };
+		1AABC21CB6B14B3698E75FE3 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = osutils.cpp; path = asmjit/base/osutils.cpp; sourceTree = SOURCE_ROOT; };
+		1BBB6D47CAAE46F7B56063CE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = regalloc.cpp; path = asmjit/base/regalloc.cpp; sourceTree = SOURCE_ROOT; };
+		1FB689027CCE4B44BE0F6183 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2C8B02523E864F19A789014C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86.h; path = asmjit/x86.h; sourceTree = SOURCE_ROOT; };
+		2C9B870F4B0049DDAE8423BA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86assembler.h; path = asmjit/x86/x86assembler.h; sourceTree = SOURCE_ROOT; };
+		2D117A317EB741CC9EB4002A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86compiler.cpp; path = asmjit/x86/x86compiler.cpp; sourceTree = SOURCE_ROOT; };
+		3D3F6A874F0943CD9671EA98 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = codebuilder.cpp; path = asmjit/base/codebuilder.cpp; sourceTree = SOURCE_ROOT; };
+		3D4EED42FF7544478740C0B2 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = logging.h; path = asmjit/base/logging.h; sourceTree = SOURCE_ROOT; };
+		3F2CE77FAD784DBC8D2EE027 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osutils.h; path = asmjit/base/osutils.h; sourceTree = SOURCE_ROOT; };
+		4081C42586DC438BB45AEE99 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = string.h; path = asmjit/base/string.h; sourceTree = SOURCE_ROOT; };
+		482B4097AD254FB3BCCC52E5 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = operand.cpp; path = asmjit/base/operand.cpp; sourceTree = SOURCE_ROOT; };
+		57BC472A6CE04856AA9F862C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = asmjit.h; path = asmjit/asmjit.h; sourceTree = SOURCE_ROOT; };
+		59BA0E154E054D4D83400B17 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86inst.cpp; path = asmjit/x86/x86inst.cpp; sourceTree = SOURCE_ROOT; };
+		635753415FAA4EC5B76BD0DB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = codeemitter.h; path = asmjit/base/codeemitter.h; sourceTree = SOURCE_ROOT; };
+		66F8AC02F1E648B2905528E4 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86builder.h; path = asmjit/x86/x86builder.h; sourceTree = SOURCE_ROOT; };
+		68B2A2C86A5B44BCAE6878BF /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = arch.cpp; path = asmjit/base/arch.cpp; sourceTree = SOURCE_ROOT; };
+		6A00573130534A9B83CC7933 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6C39D09127AD4B0C843C059E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arch.h; path = asmjit/base/arch.h; sourceTree = SOURCE_ROOT; };
+		72ABAB2407EF4691B1225CE1 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc_p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = regalloc_p.h; path = asmjit/base/regalloc_p.h; sourceTree = SOURCE_ROOT; };
+		790D814C07E44E9D9955AEE7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal_p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86internal_p.h; path = asmjit/x86/x86internal_p.h; sourceTree = SOURCE_ROOT; };
+		7ADF248530A54D6B8BAFF6B6 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86misc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86misc.h; path = asmjit/x86/x86misc.h; sourceTree = SOURCE_ROOT; };
+		7CC9ED7627B74060A26E4FE9 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = func.cpp; path = asmjit/base/func.cpp; sourceTree = SOURCE_ROOT; };
+		7F9C767CB27842129FE4938E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cpuinfo.h; path = asmjit/base/cpuinfo.h; sourceTree = SOURCE_ROOT; };
+		8318E0805EA844AA9FBF2B71 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vmem.cpp; path = asmjit/base/vmem.cpp; sourceTree = SOURCE_ROOT; };
+		885409EEC75A4535AA2F3C2E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/misc_p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = misc_p.h; path = asmjit/base/misc_p.h; sourceTree = SOURCE_ROOT; };
+		88D0D09CC10E4C96876BF009 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/simdtypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = simdtypes.h; path = asmjit/base/simdtypes.h; sourceTree = SOURCE_ROOT; };
+		88DB21B99F36435D8BB96C61 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86inst.h; path = asmjit/x86/x86inst.h; sourceTree = SOURCE_ROOT; };
+		8AC02E843EA64AE9902683AE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86compiler.h; path = asmjit/x86/x86compiler.h; sourceTree = SOURCE_ROOT; };
+		92875D92045B4082904C59CA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apiend.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = asmjit_apiend.h; path = asmjit/asmjit_apiend.h; sourceTree = SOURCE_ROOT; };
+		980264FDCF0448929D9EAE18 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = utils.cpp; path = asmjit/base/utils.cpp; sourceTree = SOURCE_ROOT; };
+		9CA2D815E53E479AA0F087AC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86emitter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86emitter.h; path = asmjit/x86/x86emitter.h; sourceTree = SOURCE_ROOT; };
+		9D51437877134A9EA59653ED /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = runtime.cpp; path = asmjit/base/runtime.cpp; sourceTree = SOURCE_ROOT; };
+		9D71202CE8604CFAB79C49BA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl_p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86instimpl_p.h; path = asmjit/x86/x86instimpl_p.h; sourceTree = SOURCE_ROOT; };
+		A0E3319014C54E8BBC1CFD89 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = assembler.h; path = asmjit/base/assembler.h; sourceTree = SOURCE_ROOT; };
+		A5D82AE1A7284BDB915BBEB1 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86internal.cpp; path = asmjit/x86/x86internal.cpp; sourceTree = SOURCE_ROOT; };
+		A619229810F1436791A2E110 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = globals.h; path = asmjit/base/globals.h; sourceTree = SOURCE_ROOT; };
+		A6455FC625A6494EBF42EA59 /* asmjit */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libasmjit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF4C96E99C648BC8B350800 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = string.cpp; path = asmjit/base/string.cpp; sourceTree = SOURCE_ROOT; };
+		B4478F50F0794456BEFA5D51 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base.h; path = asmjit/base.h; sourceTree = SOURCE_ROOT; };
+		B4D7D4B570404E55AF36122C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = assembler.cpp; path = asmjit/base/assembler.cpp; sourceTree = SOURCE_ROOT; };
+		B5EA3605A3004291B49952F7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apibegin.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = asmjit_apibegin.h; path = asmjit/asmjit_apibegin.h; sourceTree = SOURCE_ROOT; };
+		B976C4ED57364C69BC2F0800 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = codeholder.cpp; path = asmjit/base/codeholder.cpp; sourceTree = SOURCE_ROOT; };
+		BB9066B93BE94BB8B5D47E34 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86builder.cpp; path = asmjit/x86/x86builder.cpp; sourceTree = SOURCE_ROOT; };
+		BBB6E20C122D4B709BE9AA98 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86assembler.cpp; path = asmjit/x86/x86assembler.cpp; sourceTree = SOURCE_ROOT; };
+		C4CC34C3D5574F75BF28BA5E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = logging.cpp; path = asmjit/base/logging.cpp; sourceTree = SOURCE_ROOT; };
+		CC90EE87DA8A4756A36F6B62 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = zone.h; path = asmjit/base/zone.h; sourceTree = SOURCE_ROOT; };
+		D0013305FB91458B94086F23 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = zone.cpp; path = asmjit/base/zone.cpp; sourceTree = SOURCE_ROOT; };
+		D080590DAE694B7F865E0935 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/arm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arm.h; path = asmjit/arm.h; sourceTree = SOURCE_ROOT; };
+		D40470A27941498F8B661717 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = constpool.cpp; path = asmjit/base/constpool.cpp; sourceTree = SOURCE_ROOT; };
+		D85E550E393149B482C39CA0 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = codeholder.h; path = asmjit/base/codeholder.h; sourceTree = SOURCE_ROOT; };
+		DA42FF52049E4B1689AB1744 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging_p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86logging_p.h; path = asmjit/x86/x86logging_p.h; sourceTree = SOURCE_ROOT; };
+		E0599DCBDCFB40F190AD1C8A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = codeemitter.cpp; path = asmjit/base/codeemitter.cpp; sourceTree = SOURCE_ROOT; };
+		E3A4C15FD6DD4221833A6F80 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = constpool.h; path = asmjit/base/constpool.h; sourceTree = SOURCE_ROOT; };
+		E45156693C9A418A98F88EB5 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86regalloc.cpp; path = asmjit/x86/x86regalloc.cpp; sourceTree = SOURCE_ROOT; };
+		E558A9D44FE546A3B4F7C83A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = runtime.h; path = asmjit/base/runtime.h; sourceTree = SOURCE_ROOT; };
+		E5B376A45D834C0990443D60 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86operand.h; path = asmjit/x86/x86operand.h; sourceTree = SOURCE_ROOT; };
+		ED139DF912374B639B153053 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = inst.cpp; path = asmjit/base/inst.cpp; sourceTree = SOURCE_ROOT; };
+		EF219055137741D8A844C33B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = func.h; path = asmjit/base/func.h; sourceTree = SOURCE_ROOT; };
+		F038F576688644D3BEA3343E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vmem.h; path = asmjit/base/vmem.h; sourceTree = SOURCE_ROOT; };
+		F172E4DCFF4D413A899FC2AB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = codecompiler.h; path = asmjit/base/codecompiler.h; sourceTree = SOURCE_ROOT; };
+		F3146A59E5D94E45A7C45788 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/asmjit.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/CMakeFiles/asmjit.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		F545A0FBE3974696B9E28F3A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utils.h; path = asmjit/base/utils.h; sourceTree = SOURCE_ROOT; };
+		F5C25C3C15E44C68B7DB128F /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc_p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86regalloc_p.h; path = asmjit/x86/x86regalloc_p.h; sourceTree = SOURCE_ROOT; };
+		F743CF9558B7455297DE736A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86globals.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = x86globals.h; path = asmjit/x86/x86globals.h; sourceTree = SOURCE_ROOT; };
+		F917E9D2949C4B10828A8F35 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_build.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = asmjit_build.h; path = asmjit/asmjit_build.h; sourceTree = SOURCE_ROOT; };
+		FD77C941737442AD876C3911 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = codebuilder.h; path = asmjit/base/codebuilder.h; sourceTree = SOURCE_ROOT; };
+		FE4CB799AE0E4EFFACCB4028 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = x86logging.cpp; path = asmjit/x86/x86logging.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		995BF3CBD8C6482EA24D67DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1032E446E49341229D41159B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1335A3146D764F429791CE23 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D080590DAE694B7F865E0935 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/arm.h */,
+				57BC472A6CE04856AA9F862C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit.h */,
+				B5EA3605A3004291B49952F7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apibegin.h */,
+				92875D92045B4082904C59CA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_apiend.h */,
+				F917E9D2949C4B10828A8F35 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/asmjit_build.h */,
+				B4478F50F0794456BEFA5D51 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base.h */,
+				6C39D09127AD4B0C843C059E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.h */,
+				A0E3319014C54E8BBC1CFD89 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.h */,
+				FD77C941737442AD876C3911 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.h */,
+				F172E4DCFF4D413A899FC2AB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.h */,
+				635753415FAA4EC5B76BD0DB /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.h */,
+				D85E550E393149B482C39CA0 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.h */,
+				E3A4C15FD6DD4221833A6F80 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.h */,
+				7F9C767CB27842129FE4938E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.h */,
+				EF219055137741D8A844C33B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.h */,
+				A619229810F1436791A2E110 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.h */,
+				0E60A4AD3A014390AC85ED2B /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.h */,
+				3D4EED42FF7544478740C0B2 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.h */,
+				885409EEC75A4535AA2F3C2E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/misc_p.h */,
+				17C560E3B2554363BE47EEE8 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.h */,
+				3F2CE77FAD784DBC8D2EE027 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.h */,
+				72ABAB2407EF4691B1225CE1 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc_p.h */,
+				E558A9D44FE546A3B4F7C83A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.h */,
+				88D0D09CC10E4C96876BF009 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/simdtypes.h */,
+				4081C42586DC438BB45AEE99 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.h */,
+				F545A0FBE3974696B9E28F3A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.h */,
+				F038F576688644D3BEA3343E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.h */,
+				CC90EE87DA8A4756A36F6B62 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.h */,
+				2C8B02523E864F19A789014C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86.h */,
+				2C9B870F4B0049DDAE8423BA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.h */,
+				66F8AC02F1E648B2905528E4 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.h */,
+				8AC02E843EA64AE9902683AE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.h */,
+				9CA2D815E53E479AA0F087AC /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86emitter.h */,
+				F743CF9558B7455297DE736A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86globals.h */,
+				88DB21B99F36435D8BB96C61 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.h */,
+				9D71202CE8604CFAB79C49BA /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl_p.h */,
+				790D814C07E44E9D9955AEE7 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal_p.h */,
+				DA42FF52049E4B1689AB1744 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging_p.h */,
+				7ADF248530A54D6B8BAFF6B6 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86misc.h */,
+				E5B376A45D834C0990443D60 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.h */,
+				F5C25C3C15E44C68B7DB128F /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc_p.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		276803AEF5F749189BB38517 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1032E446E49341229D41159B /* CMake Rules */,
+				6A00573130534A9B83CC7933 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		2C2A627540B1467BA1991CFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51AC94E19BE14ED19755CA98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3146A59E5D94E45A7C45788 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/asmjit.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5DD68336DE564AB6BD0381E8 /* asmjit */ = {
+			isa = PBXGroup;
+			children = (
+				DEEA07F68EC9463193BCD078 /* Source Files */,
+				1335A3146D764F429791CE23 /* Header Files */,
+				51AC94E19BE14ED19755CA98 /* Resources */,
+				1FB689027CCE4B44BE0F6183 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/CMakeLists.txt */,
+			);
+			name = asmjit;
+			sourceTree = "<group>";
+		};
+		D6FCE7652685496B8CD8258B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6455FC625A6494EBF42EA59 /* asmjit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEEA07F68EC9463193BCD078 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B2A2C86A5B44BCAE6878BF /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/arch.cpp */,
+				B4D7D4B570404E55AF36122C /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/assembler.cpp */,
+				3D3F6A874F0943CD9671EA98 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codebuilder.cpp */,
+				0F1E2F3DBB1648ADAFEEFB14 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codecompiler.cpp */,
+				E0599DCBDCFB40F190AD1C8A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeemitter.cpp */,
+				B976C4ED57364C69BC2F0800 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/codeholder.cpp */,
+				D40470A27941498F8B661717 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/constpool.cpp */,
+				04ECDFCA57114B039D55C516 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/cpuinfo.cpp */,
+				7CC9ED7627B74060A26E4FE9 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/func.cpp */,
+				08070FE04D6A4865A3DF55C9 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/globals.cpp */,
+				ED139DF912374B639B153053 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/inst.cpp */,
+				C4CC34C3D5574F75BF28BA5E /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/logging.cpp */,
+				482B4097AD254FB3BCCC52E5 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/operand.cpp */,
+				1AABC21CB6B14B3698E75FE3 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/osutils.cpp */,
+				1BBB6D47CAAE46F7B56063CE /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/regalloc.cpp */,
+				9D51437877134A9EA59653ED /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/runtime.cpp */,
+				AEF4C96E99C648BC8B350800 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/string.cpp */,
+				980264FDCF0448929D9EAE18 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/utils.cpp */,
+				8318E0805EA844AA9FBF2B71 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/vmem.cpp */,
+				D0013305FB91458B94086F23 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/base/zone.cpp */,
+				BBB6E20C122D4B709BE9AA98 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86assembler.cpp */,
+				BB9066B93BE94BB8B5D47E34 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86builder.cpp */,
+				2D117A317EB741CC9EB4002A /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86compiler.cpp */,
+				59BA0E154E054D4D83400B17 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86inst.cpp */,
+				0E06EA9A69444268B07EFE23 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86instimpl.cpp */,
+				A5D82AE1A7284BDB915BBEB1 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86internal.cpp */,
+				FE4CB799AE0E4EFFACCB4028 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86logging.cpp */,
+				159B5E059B4349C18C24B817 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand.cpp */,
+				0FBF2DBC239244719A82F8E0 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86operand_regs.cpp */,
+				E45156693C9A418A98F88EB5 /* /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/asmjit/x86/x86regalloc.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F9CF2A04333C444085B12B5D = {
+			isa = PBXGroup;
+			children = (
+				5DD68336DE564AB6BD0381E8 /* asmjit */,
+				276803AEF5F749189BB38517 /* ALL_BUILD */,
+				D6FCE7652685496B8CD8258B /* Products */,
+				2C2A627540B1467BA1991CFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6117D3C621744C69861520C7 /* asmjit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFA99CF7B73C45FF8530A8A7 /* Build configuration list for PBXNativeTarget "asmjit" */;
+			buildPhases = (
+				995BF3CBD8C6482EA24D67DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A16159580434E50899CEBCA /* PBXTargetDependency */,
+			);
+			name = asmjit;
+			productName = asmjit;
+			productReference = A6455FC625A6494EBF42EA59 /* asmjit */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41C9D690F71D4D5484B9C4D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 06D10149BCD84E0B8105D2C8 /* Build configuration list for PBXProject "asmjit" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				9259971EA63F430BB805787F /* Debug */,
+				5749B50846344AC1B78892E5 /* Release */,
+				C1A11CC567104005B1A186AC /* MinSizeRel */,
+				0BC088CE9F0349C68BFD60E1 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = F9CF2A04333C444085B12B5D;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				634E7748E0534021ACAD03BB /* ALL_BUILD */,
+				27BF695BD02B4B03AD4D9862 /* ZERO_CHECK */,
+				6117D3C621744C69861520C7 /* asmjit */,
+				92FA01CFB5E9453DBA57CE3A /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  /opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  /opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  /opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  /opt/homebrew/Cellar/cmake/3.20.5/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9E16BA4E0E0AA6B8B86BF465 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  make -f /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  make -f /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  make -f /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  make -f /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		A2C2FD30438E9E09AB6E59A1 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A16159580434E50899CEBCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27BF695BD02B4B03AD4D9862 /* ZERO_CHECK */;
+			targetProxy = 645183B4FADF4E0F8D81C31B /* PBXContainerItemProxy */;
+		};
+		49D5360E3E494D2B8ED976F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6117D3C621744C69861520C7 /* asmjit */;
+			targetProxy = 3DE8D88D127F49DABC4BFA5E /* PBXContainerItemProxy */;
+		};
+		CB79978A11844BACAB43ABA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 634E7748E0534021ACAD03BB /* ALL_BUILD */;
+			targetProxy = 201B01E24D9449A8B168A02A /* PBXContainerItemProxy */;
+		};
+		FAA24F23931A4F2998EAC762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27BF695BD02B4B03AD4D9862 /* ZERO_CHECK */;
+			targetProxy = 4E2666397D3C4CA18E3BF3D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D58985F62774CA686BD2161 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5B265A37F2AF446FB56466DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6FDAEAD8A4394D51A7EEB100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		78831BC155554978A91F08E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7BC7C5BA30214AEAB6585D91 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		83B2E7F9AEB54CC1AD002533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		ADAE66C919AA484296AF4D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LIBTOOLFLAGS = ();
+			};
+			name = Debug;
+		};
+		B6D3454E1FD9484D8317E77D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = MinSizeRel;
+		};
+		BA22D52AE4264CAE9FF45D6F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LIBTOOLFLAGS = ();
+			};
+			name = RelWithDebInfo;
+		};
+		BBF585454871458A8ED4E2FB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BE10425FA76C4AB6AA17D195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BE6B329777EA48B4B280B1B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LIBTOOLFLAGS = ();
+			};
+			name = Release;
+		};
+		C70DDB5EE97C41E782735CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CB01C47E08304A399E057E0B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LIBTOOLFLAGS = ();
+			};
+			name = MinSizeRel;
+		};
+		D9BD11194C394BDA936C0D97 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = RelWithDebInfo;
+		};
+		EFA403C5B8BD49A3B0D18186 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F35684EF85FB4E089B72B38B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F3D9FADCEED54A35B43B7D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Release;
+		};
+		F49DC54442804A0EB64CDD0A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F4EDEED23E8649F2BB64F93B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "/Applications/Xcode-13.0.0-Beta.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk";
+				SYMROOT = /Users/tobi/Developer/repos/games/gzdoom/libraries/asmjit/build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06D10149BCD84E0B8105D2C8 /* Build configuration list for PBXProject "asmjit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EDEED23E8649F2BB64F93B /* Debug */,
+				F3D9FADCEED54A35B43B7D74 /* Release */,
+				B6D3454E1FD9484D8317E77D /* MinSizeRel */,
+				D9BD11194C394BDA936C0D97 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A575360EBEB94D9F9BA02D5A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78831BC155554978A91F08E9 /* Debug */,
+				5B265A37F2AF446FB56466DD /* Release */,
+				1D58985F62774CA686BD2161 /* MinSizeRel */,
+				F35684EF85FB4E089B72B38B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE90ECF6CEF04184A2D0D08B /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FDAEAD8A4394D51A7EEB100 /* Debug */,
+				BE10425FA76C4AB6AA17D195 /* Release */,
+				7BC7C5BA30214AEAB6585D91 /* MinSizeRel */,
+				F49DC54442804A0EB64CDD0A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DFA99CF7B73C45FF8530A8A7 /* Build configuration list for PBXNativeTarget "asmjit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADAE66C919AA484296AF4D41 /* Debug */,
+				BE6B329777EA48B4B280B1B4 /* Release */,
+				CB01C47E08304A399E057E0B /* MinSizeRel */,
+				BA22D52AE4264CAE9FF45D6F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4874FBA24D04AA2968E9243 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B2E7F9AEB54CC1AD002533 /* Debug */,
+				C70DDB5EE97C41E782735CA8 /* Release */,
+				BBF585454871458A8ED4E2FB /* MinSizeRel */,
+				EFA403C5B8BD49A3B0D18186 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41C9D690F71D4D5484B9C4D7 /* Project object */;
+}
