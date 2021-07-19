@@ -1,3 +1,24 @@
+# GZDoom fork for iPadOs WIP
+
+Be warned this is a barely working port and there is lots of stuff that doesn't work properly but it runs and can be controlled via mouse/keyboard on iPadOs.
+
+- app doesn exit cleanly (will hang) force quit via app switcher
+- keyboard input in console and menu (e.g. savegames) doesn't work
+- the full settings menu is available but be warned that things might break.. (just delete the gzdoom.ini file in the config folder if that happens)
+- gamepad support does not work
+- lots of other stuff
+
+
+
+On a Mac
+- checkout repo
+- install sdl2 via brew: brew install sdl2
+- open xcode project in gzdoom/gzdoom/gzdoom.xcodeproj
+- adjust developemt team
+- deploy to device
+- start app first time (app will crash)-> because data files can not be found but now there should be a gzdoom folder in the Files App under "On my iPad". there copy all the files from 
+
+
 # Welcome to GZDoom!
 
 [![Build Status](https://github.com/coelckers/gzdoom/workflows/Continuous%20Integration/badge.svg)](https://github.com/coelckers/gzdoom/actions?query=workflow%3A%22Continuous+Integration%22)
