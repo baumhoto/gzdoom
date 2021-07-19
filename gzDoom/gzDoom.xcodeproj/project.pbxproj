@@ -479,14 +479,6 @@
 		D2D0035526A2E5A30002D9A5 /* libOGLCompiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035226A2E5920002D9A5 /* libOGLCompiler.a */; };
 		D2D0035626A2E5A30002D9A5 /* libSPIRV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035126A2E5920002D9A5 /* libSPIRV.a */; };
 		D2DAA1A626A3D22A00169AEF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */; };
-		D2DAA1B126A3D7C400169AEF /* gs-by-papiezak-and-sneakernets.wopn in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1A826A3D7C300169AEF /* gs-by-papiezak-and-sneakernets.wopn */; };
-		D2DAA1B226A3D7C400169AEF /* GENMIDI.GS.wopl in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1A926A3D7C300169AEF /* GENMIDI.GS.wopl */; };
-		D2DAA1B326A3D7C400169AEF /* gzdoom.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AA26A3D7C300169AEF /* gzdoom.pk3 */; };
-		D2DAA1B426A3D7C400169AEF /* lights.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AB26A3D7C300169AEF /* lights.pk3 */; };
-		D2DAA1B526A3D7C400169AEF /* game_widescreen_gfx.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AC26A3D7C400169AEF /* game_widescreen_gfx.pk3 */; };
-		D2DAA1B626A3D7C400169AEF /* gzdoom.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AE26A3D7C400169AEF /* gzdoom.sf2 */; };
-		D2DAA1B726A3D7C400169AEF /* brightmaps.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AF26A3D7C400169AEF /* brightmaps.pk3 */; };
-		D2DAA1B826A3D7C400169AEF /* game_support.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1B026A3D7C400169AEF /* game_support.pk3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1410,14 +1402,6 @@
 		D2D0035226A2E5920002D9A5 /* libOGLCompiler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOGLCompiler.a; path = libs/libOGLCompiler.a; sourceTree = "<group>"; };
 		D2D0035326A2E5920002D9A5 /* libgdtoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgdtoa.a; path = libs/libgdtoa.a; sourceTree = "<group>"; };
 		D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		D2DAA1A826A3D7C300169AEF /* gs-by-papiezak-and-sneakernets.wopn */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gs-by-papiezak-and-sneakernets.wopn"; sourceTree = "<group>"; };
-		D2DAA1A926A3D7C300169AEF /* GENMIDI.GS.wopl */ = {isa = PBXFileReference; lastKnownFileType = file; path = GENMIDI.GS.wopl; sourceTree = "<group>"; };
-		D2DAA1AA26A3D7C300169AEF /* gzdoom.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gzdoom.pk3; sourceTree = "<group>"; };
-		D2DAA1AB26A3D7C300169AEF /* lights.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lights.pk3; sourceTree = "<group>"; };
-		D2DAA1AC26A3D7C400169AEF /* game_widescreen_gfx.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = game_widescreen_gfx.pk3; sourceTree = "<group>"; };
-		D2DAA1AE26A3D7C400169AEF /* gzdoom.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gzdoom.sf2; sourceTree = "<group>"; };
-		D2DAA1AF26A3D7C400169AEF /* brightmaps.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = brightmaps.pk3; sourceTree = "<group>"; };
-		D2DAA1B026A3D7C400169AEF /* game_support.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = game_support.pk3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1459,13 +1443,6 @@
 		D259772F26A299D3003023E3 = {
 			isa = PBXGroup;
 			children = (
-				D2DAA1AF26A3D7C400169AEF /* brightmaps.pk3 */,
-				D2DAA1A726A3D7C300169AEF /* fm_banks */,
-				D2DAA1B026A3D7C400169AEF /* game_support.pk3 */,
-				D2DAA1AC26A3D7C400169AEF /* game_widescreen_gfx.pk3 */,
-				D2DAA1AA26A3D7C300169AEF /* gzdoom.pk3 */,
-				D2DAA1AB26A3D7C300169AEF /* lights.pk3 */,
-				D2DAA1AD26A3D7C400169AEF /* soundfonts */,
 				D2597E0D26A29A9F003023E3 /* headers */,
 				D259774F26A29A03003023E3 /* src */,
 				D259773A26A299D4003023E3 /* gzDoom */,
@@ -3055,23 +3032,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2DAA1A726A3D7C300169AEF /* fm_banks */ = {
-			isa = PBXGroup;
-			children = (
-				D2DAA1A826A3D7C300169AEF /* gs-by-papiezak-and-sneakernets.wopn */,
-				D2DAA1A926A3D7C300169AEF /* GENMIDI.GS.wopl */,
-			);
-			path = fm_banks;
-			sourceTree = "<group>";
-		};
-		D2DAA1AD26A3D7C400169AEF /* soundfonts */ = {
-			isa = PBXGroup;
-			children = (
-				D2DAA1AE26A3D7C400169AEF /* gzdoom.sf2 */,
-			);
-			path = soundfonts;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3130,17 +3090,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2DAA1B226A3D7C400169AEF /* GENMIDI.GS.wopl in Resources */,
-				D2DAA1B826A3D7C400169AEF /* game_support.pk3 in Resources */,
 				D259774826A299D4003023E3 /* LaunchScreen.storyboard in Resources */,
-				D2DAA1B626A3D7C400169AEF /* gzdoom.sf2 in Resources */,
-				D2DAA1B526A3D7C400169AEF /* game_widescreen_gfx.pk3 in Resources */,
 				D2597D0026A29A04003023E3 /* sc_man_scanner.re in Resources */,
-				D2DAA1B126A3D7C400169AEF /* gs-by-papiezak-and-sneakernets.wopn in Resources */,
 				D259774526A299D4003023E3 /* Assets.xcassets in Resources */,
-				D2DAA1B326A3D7C400169AEF /* gzdoom.pk3 in Resources */,
-				D2DAA1B426A3D7C400169AEF /* lights.pk3 in Resources */,
-				D2DAA1B726A3D7C400169AEF /* brightmaps.pk3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
