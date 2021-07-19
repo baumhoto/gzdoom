@@ -349,8 +349,8 @@ void V_InitScreenSize ()
 		height = (width * 6) / 8;
 	}
 	// Remember the passed arguments for the next time the game starts up windowed.
-    vid_defwidth = 2732; //width;
-    vid_defheight = 2048; //height;
+    vid_defwidth = 1366; //width;
+    vid_defheight = 1024; //height;
 }
 
 void V_InitScreen()

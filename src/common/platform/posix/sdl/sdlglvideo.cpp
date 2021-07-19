@@ -137,8 +137,8 @@ namespace Priv
 			win_w = bounds.w * 8 / 10;
 			win_h = bounds.h * 8 / 10;
 		}
-        win_w = 2732;
-        win_h = 2048;
+        win_w = 1366;
+        win_h = 1024;
 
 		FString caption;
 		caption.Format(GAMENAME " %s (%s)", GetVersionString(), GetGitTime());
