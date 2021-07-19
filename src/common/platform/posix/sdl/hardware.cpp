@@ -64,7 +64,7 @@ void I_ShutdownGraphics ()
 
 void I_InitGraphics ()
 {
-#ifdef __APPLE__
+#ifdef defined(__APPLE__) && defined(!IOS)
 	SDL_SetHint(SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES, "0");
 #endif // __APPLE__
 

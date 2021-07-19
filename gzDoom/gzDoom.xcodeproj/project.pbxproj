@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D204362A26A4B021009A4A01 /* libopenal.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D204362926A4B021009A4A01 /* libopenal.1.dylib */; };
+		D204362B26A4B021009A4A01 /* libopenal.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D204362926A4B021009A4A01 /* libopenal.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D204362D26A4B1DD009A4A01 /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; };
+		D204362E26A4B1DD009A4A01 /* libMoltenVK.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D259773C26A299D4003023E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259773B26A299D4003023E3 /* AppDelegate.swift */; };
-		D259773E26A299D4003023E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259773D26A299D4003023E3 /* SceneDelegate.swift */; };
-		D259774026A299D4003023E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259773F26A299D4003023E3 /* ViewController.swift */; };
-		D259774326A299D4003023E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D259774126A299D4003023E3 /* Main.storyboard */; };
 		D259774526A299D4003023E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D259774426A299D4003023E3 /* Assets.xcassets */; };
 		D259774826A299D4003023E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D259774626A299D4003023E3 /* LaunchScreen.storyboard */; };
 		D2597BDC26A29A04003023E3 /* glnodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259775126A29A03003023E3 /* glnodes.cpp */; };
@@ -25,16 +26,12 @@
 		D2597BE526A29A04003023E3 /* usdf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259775B26A29A03003023E3 /* usdf.cpp */; };
 		D2597BE626A29A04003023E3 /* specials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259775D26A29A03003023E3 /* specials.cpp */; };
 		D2597BE726A29A04003023E3 /* udmf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259775E26A29A03003023E3 /* udmf.cpp */; };
-		D2597BE826A29A04003023E3 /* zdoom.icns in Resources */ = {isa = PBXBuildFile; fileRef = D259776226A29A03003023E3 /* zdoom.icns */; };
-		D2597BE926A29A04003023E3 /* zdoom-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D259776326A29A03003023E3 /* zdoom-info.plist */; };
 		D2597BEA26A29A04003023E3 /* i_steam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259776426A29A03003023E3 /* i_steam.cpp */; };
-		D2597BEB26A29A04003023E3 /* zdoom.xpm in Resources */ = {isa = PBXBuildFile; fileRef = D259776526A29A03003023E3 /* zdoom.xpm */; };
 		D2597BEC26A29A04003023E3 /* p_saveg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259776626A29A03003023E3 /* p_saveg.cpp */; };
 		D2597BED26A29A04003023E3 /* doomstat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259776826A29A03003023E3 /* doomstat.cpp */; };
 		D2597BEE26A29A04003023E3 /* p_openmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259776926A29A03003023E3 /* p_openmap.cpp */; };
 		D2597BEF26A29A04003023E3 /* intermission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259776C26A29A03003023E3 /* intermission.cpp */; };
 		D2597BF026A29A04003023E3 /* intermission_parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259776E26A29A03003023E3 /* intermission_parse.cpp */; };
-		D2597BF126A29A04003023E3 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = D259776F26A29A03003023E3 /* CMakeLists.txt */; };
 		D2597BF226A29A04003023E3 /* thingdef_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259777126A29A03003023E3 /* thingdef_data.cpp */; };
 		D2597BF326A29A04003023E3 /* vmthunks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259777226A29A03003023E3 /* vmthunks.cpp */; };
 		D2597BF426A29A04003023E3 /* codegen_doom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259777526A29A03003023E3 /* codegen_doom.cpp */; };
@@ -138,7 +135,6 @@
 		D2597C5C26A29A04003023E3 /* vmframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259783426A29A03003023E3 /* vmframe.cpp */; };
 		D2597C6526A29A04003023E3 /* base_sbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259784326A29A03003023E3 /* base_sbar.cpp */; };
 		D2597C6826A29A04003023E3 /* i_system_posix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259784B26A29A03003023E3 /* i_system_posix.cpp */; };
-		D2597C6926A29A04003023E3 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D259784C26A29A03003023E3 /* readme.md */; };
 		D2597C6A26A29A04003023E3 /* i_specialpaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259784F26A29A03003023E3 /* i_specialpaths.cpp */; };
 		D2597C6B26A29A04003023E3 /* gtk_dialogs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259785026A29A03003023E3 /* gtk_dialogs.cpp */; };
 		D2597C7326A29A04003023E3 /* hardware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259785D26A29A03003023E3 /* hardware.cpp */; };
@@ -257,7 +253,6 @@
 		D2597D1126A29A04003023E3 /* v_2ddrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D25979BE26A29A03003023E3 /* v_2ddrawer.cpp */; };
 		D2597D1226A29A04003023E3 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D25979C426A29A03003023E3 /* md5.cpp */; };
 		D2597D1326A29A04003023E3 /* SFMT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D25979D026A29A03003023E3 /* SFMT.cpp */; };
-		D2597D1426A29A04003023E3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D25979D326A29A03003023E3 /* LICENSE.txt */; };
 		D2597D1526A29A04003023E3 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D25979D826A29A03003023E3 /* base64.cpp */; };
 		D2597D1626A29A04003023E3 /* atan.c in Sources */ = {isa = PBXBuildFile; fileRef = D25979DE26A29A03003023E3 /* atan.c */; };
 		D2597D1726A29A04003023E3 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = D25979DF26A29A03003023E3 /* log.c */; };
@@ -450,7 +445,6 @@
 		D2597E0A26A29A04003023E3 /* nodebuild_events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2597BD726A29A04003023E3 /* nodebuild_events.cpp */; };
 		D2597E0B26A29A04003023E3 /* nodebuild_extract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2597BD826A29A04003023E3 /* nodebuild_extract.cpp */; };
 		D2597E0C26A29A04003023E3 /* nodebuild_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2597BD926A29A04003023E3 /* nodebuild_utility.cpp */; };
-		D2597E1526A2A0D1003023E3 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2597E1326A2A0D1003023E3 /* test.cpp */; };
 		D26709A026A2EAD5006BEFE8 /* libOSDependent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D267099F26A2EAC8006BEFE8 /* libOSDependent.a */; };
 		D26709A426A2F404006BEFE8 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D26709A326A2F3F3006BEFE8 /* libjpeg.a */; };
 		D26709A526A2F404006BEFE8 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D26709A226A2F3F3006BEFE8 /* libz.a */; };
@@ -458,7 +452,6 @@
 		D2A31CF226A2C92B000E65C3 /* xlat_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D2A31CF026A2C92B000E65C3 /* xlat_parser.c */; };
 		D2C8482026A317AD0067CED1 /* libzmusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8481F26A317A00067CED1 /* libzmusic.a */; };
 		D2C8482226A319000067CED1 /* zstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C8482126A319000067CED1 /* zstring.cpp */; };
-		D2C8482426A31C100067CED1 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8482326A31C100067CED1 /* OpenAL.framework */; };
 		D2C8482626A31CB70067CED1 /* findfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C8482526A31CB70067CED1 /* findfile.cpp */; };
 		D2C8482826A31DEF0067CED1 /* x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C8482726A31DEF0067CED1 /* x86.cpp */; };
 		D2C8482A26A31F430067CED1 /* sdlglvideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C8482926A31F430067CED1 /* sdlglvideo.cpp */; };
@@ -471,13 +464,12 @@
 		D2D0033426A2D4C60002D9A5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033326A2D4C60002D9A5 /* AudioToolbox.framework */; };
 		D2D0033626A2D4CC0002D9A5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033526A2D4CC0002D9A5 /* AVFoundation.framework */; };
 		D2D0033826A2D4D30002D9A5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033726A2D4D30002D9A5 /* CoreAudio.framework */; };
-		D2D0033A26A2D4DA0002D9A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033926A2D4D90002D9A5 /* CoreGraphics.framework */; };
+		D2D0033A26A2D4DA0002D9A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033926A2D4D90002D9A5 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D2D0033C26A2D4E20002D9A5 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033B26A2D4E20002D9A5 /* CoreHaptics.framework */; };
 		D2D0033E26A2D5760002D9A5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033D26A2D5760002D9A5 /* CoreMotion.framework */; };
 		D2D0034026A2D57E0002D9A5 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033F26A2D57E0002D9A5 /* GameController.framework */; };
 		D2D0034226A2D5850002D9A5 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034126A2D5840002D9A5 /* Metal.framework */; };
 		D2D0034426A2D58A0002D9A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034326A2D58A0002D9A5 /* UIKit.framework */; };
-		D2D0034926A2D5AE0002D9A5 /* libMoltenVK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034526A2D59C0002D9A5 /* libMoltenVK.a */; };
 		D2D0034A26A2D5AE0002D9A5 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034826A2D59C0002D9A5 /* libogg.a */; };
 		D2D0034B26A2D5AE0002D9A5 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034726A2D59C0002D9A5 /* libSDL2.a */; };
 		D2D0034C26A2D5AE0002D9A5 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034626A2D59C0002D9A5 /* libvorbis.a */; };
@@ -486,15 +478,40 @@
 		D2D0035426A2E5A30002D9A5 /* libgdtoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035326A2E5920002D9A5 /* libgdtoa.a */; };
 		D2D0035526A2E5A30002D9A5 /* libOGLCompiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035226A2E5920002D9A5 /* libOGLCompiler.a */; };
 		D2D0035626A2E5A30002D9A5 /* libSPIRV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035126A2E5920002D9A5 /* libSPIRV.a */; };
+		D2DAA1A626A3D22A00169AEF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */; };
+		D2DAA1B126A3D7C400169AEF /* gs-by-papiezak-and-sneakernets.wopn in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1A826A3D7C300169AEF /* gs-by-papiezak-and-sneakernets.wopn */; };
+		D2DAA1B226A3D7C400169AEF /* GENMIDI.GS.wopl in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1A926A3D7C300169AEF /* GENMIDI.GS.wopl */; };
+		D2DAA1B326A3D7C400169AEF /* gzdoom.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AA26A3D7C300169AEF /* gzdoom.pk3 */; };
+		D2DAA1B426A3D7C400169AEF /* lights.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AB26A3D7C300169AEF /* lights.pk3 */; };
+		D2DAA1B526A3D7C400169AEF /* game_widescreen_gfx.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AC26A3D7C400169AEF /* game_widescreen_gfx.pk3 */; };
+		D2DAA1B626A3D7C400169AEF /* gzdoom.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AE26A3D7C400169AEF /* gzdoom.sf2 */; };
+		D2DAA1B726A3D7C400169AEF /* brightmaps.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1AF26A3D7C400169AEF /* brightmaps.pk3 */; };
+		D2DAA1B826A3D7C400169AEF /* game_support.pk3 in Resources */ = {isa = PBXBuildFile; fileRef = D2DAA1B026A3D7C400169AEF /* game_support.pk3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D2DAA1BF26A4085600169AEF /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D204362E26A4B1DD009A4A01 /* libMoltenVK.dylib in Embed Libraries */,
+				D204362B26A4B021009A4A01 /* libopenal.1.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D204362626A4AF97009A4A01 /* libopenal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopenal.dylib; path = libs/libopenal.dylib; sourceTree = "<group>"; };
+		D204362926A4B021009A4A01 /* libopenal.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopenal.1.dylib; path = libs/libopenal.1.dylib; sourceTree = "<group>"; };
+		D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMoltenVK.dylib; path = libs/libMoltenVK.dylib; sourceTree = "<group>"; };
 		D213F77C26A2C055000970A2 /* PoolAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PoolAlloc.h; path = ../libraries/glslang/glslang/Include/PoolAlloc.h; sourceTree = "<group>"; };
 		D213F77D26A2C378000970A2 /* sc_man_scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sc_man_scanner.h; path = ../build2/src/sc_man_scanner.h; sourceTree = "<group>"; };
 		D259773826A299D4003023E3 /* gzDoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gzDoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D259773B26A299D4003023E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D259773D26A299D4003023E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D259773F26A299D4003023E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D259774226A299D4003023E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D259774426A299D4003023E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D259774726A299D4003023E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1351,8 +1368,6 @@
 		D2597E0E26A29AB8003023E3 /* gdtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gdtoa.h; path = ../libraries/gdtoa/gdtoa.h; sourceTree = "<group>"; };
 		D2597E0F26A29B05003023E3 /* zmusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zmusic.h; path = ../bin/windows/zmusic/include/zmusic.h; sourceTree = "<group>"; };
 		D2597E1026A29D2B003023E3 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../libraries/glslang/glslang/Include/Common.h; sourceTree = "<group>"; };
-		D2597E1326A2A0D1003023E3 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
-		D2597E1426A2A0D1003023E3 /* test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
 		D267099F26A2EAC8006BEFE8 /* libOSDependent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOSDependent.a; path = libs/libOSDependent.a; sourceTree = "<group>"; };
 		D26709A126A2F3F3006BEFE8 /* libbz2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbz2.a; path = libs/libbz2.a; sourceTree = "<group>"; };
 		D26709A226A2F3F3006BEFE8 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = libs/libz.a; sourceTree = "<group>"; };
@@ -1394,6 +1409,15 @@
 		D2D0035126A2E5920002D9A5 /* libSPIRV.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSPIRV.a; path = libs/libSPIRV.a; sourceTree = "<group>"; };
 		D2D0035226A2E5920002D9A5 /* libOGLCompiler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOGLCompiler.a; path = libs/libOGLCompiler.a; sourceTree = "<group>"; };
 		D2D0035326A2E5920002D9A5 /* libgdtoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgdtoa.a; path = libs/libgdtoa.a; sourceTree = "<group>"; };
+		D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D2DAA1A826A3D7C300169AEF /* gs-by-papiezak-and-sneakernets.wopn */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gs-by-papiezak-and-sneakernets.wopn"; sourceTree = "<group>"; };
+		D2DAA1A926A3D7C300169AEF /* GENMIDI.GS.wopl */ = {isa = PBXFileReference; lastKnownFileType = file; path = GENMIDI.GS.wopl; sourceTree = "<group>"; };
+		D2DAA1AA26A3D7C300169AEF /* gzdoom.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gzdoom.pk3; sourceTree = "<group>"; };
+		D2DAA1AB26A3D7C300169AEF /* lights.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lights.pk3; sourceTree = "<group>"; };
+		D2DAA1AC26A3D7C400169AEF /* game_widescreen_gfx.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = game_widescreen_gfx.pk3; sourceTree = "<group>"; };
+		D2DAA1AE26A3D7C400169AEF /* gzdoom.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gzdoom.sf2; sourceTree = "<group>"; };
+		D2DAA1AF26A3D7C400169AEF /* brightmaps.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = brightmaps.pk3; sourceTree = "<group>"; };
+		D2DAA1B026A3D7C400169AEF /* game_support.pk3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = game_support.pk3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1402,10 +1426,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D0033A26A2D4DA0002D9A5 /* CoreGraphics.framework in Frameworks */,
+				D204362D26A4B1DD009A4A01 /* libMoltenVK.dylib in Frameworks */,
 				D2C8482026A317AD0067CED1 /* libzmusic.a in Frameworks */,
 				D2D0034426A2D58A0002D9A5 /* UIKit.framework in Frameworks */,
-				D2C8482426A31C100067CED1 /* OpenAL.framework in Frameworks */,
 				D2D0034026A2D57E0002D9A5 /* GameController.framework in Frameworks */,
+				D2DAA1A626A3D22A00169AEF /* OpenGLES.framework in Frameworks */,
 				D2D0034A26A2D5AE0002D9A5 /* libogg.a in Frameworks */,
 				D2D0033E26A2D5760002D9A5 /* CoreMotion.framework in Frameworks */,
 				D26709A026A2EAD5006BEFE8 /* libOSDependent.a in Frameworks */,
@@ -1413,7 +1438,6 @@
 				D2D0035626A2E5A30002D9A5 /* libSPIRV.a in Frameworks */,
 				D2D0035526A2E5A30002D9A5 /* libOGLCompiler.a in Frameworks */,
 				D2D0034C26A2D5AE0002D9A5 /* libvorbis.a in Frameworks */,
-				D2D0034926A2D5AE0002D9A5 /* libMoltenVK.a in Frameworks */,
 				D2D0035026A2E1590002D9A5 /* liblzma.a in Frameworks */,
 				D26709A526A2F404006BEFE8 /* libz.a in Frameworks */,
 				D2D0033C26A2D4E20002D9A5 /* CoreHaptics.framework in Frameworks */,
@@ -1423,6 +1447,7 @@
 				D2D0033626A2D4CC0002D9A5 /* AVFoundation.framework in Frameworks */,
 				D2D0034226A2D5850002D9A5 /* Metal.framework in Frameworks */,
 				D2D0033426A2D4C60002D9A5 /* AudioToolbox.framework in Frameworks */,
+				D204362A26A4B021009A4A01 /* libopenal.1.dylib in Frameworks */,
 				D26709A626A2F404006BEFE8 /* libbz2.a in Frameworks */,
 				D2D0035426A2E5A30002D9A5 /* libgdtoa.a in Frameworks */,
 			);
@@ -1434,6 +1459,13 @@
 		D259772F26A299D3003023E3 = {
 			isa = PBXGroup;
 			children = (
+				D2DAA1AF26A3D7C400169AEF /* brightmaps.pk3 */,
+				D2DAA1A726A3D7C300169AEF /* fm_banks */,
+				D2DAA1B026A3D7C400169AEF /* game_support.pk3 */,
+				D2DAA1AC26A3D7C400169AEF /* game_widescreen_gfx.pk3 */,
+				D2DAA1AA26A3D7C300169AEF /* gzdoom.pk3 */,
+				D2DAA1AB26A3D7C300169AEF /* lights.pk3 */,
+				D2DAA1AD26A3D7C400169AEF /* soundfonts */,
 				D2597E0D26A29A9F003023E3 /* headers */,
 				D259774F26A29A03003023E3 /* src */,
 				D259773A26A299D4003023E3 /* gzDoom */,
@@ -1454,14 +1486,10 @@
 			isa = PBXGroup;
 			children = (
 				D259773B26A299D4003023E3 /* AppDelegate.swift */,
-				D259773D26A299D4003023E3 /* SceneDelegate.swift */,
-				D259773F26A299D4003023E3 /* ViewController.swift */,
 				D259774126A299D4003023E3 /* Main.storyboard */,
 				D259774426A299D4003023E3 /* Assets.xcassets */,
 				D259774626A299D4003023E3 /* LaunchScreen.storyboard */,
 				D259774926A299D4003023E3 /* Info.plist */,
-				D2597E1326A2A0D1003023E3 /* test.cpp */,
-				D2597E1426A2A0D1003023E3 /* test.hpp */,
 			);
 			path = gzDoom;
 			sourceTree = "<group>";
@@ -2995,6 +3023,10 @@
 		D2D0033226A2D4C60002D9A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */,
+				D204362926A4B021009A4A01 /* libopenal.1.dylib */,
+				D204362626A4AF97009A4A01 /* libopenal.dylib */,
+				D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */,
 				D2C8482326A31C100067CED1 /* OpenAL.framework */,
 				D2C8481F26A317A00067CED1 /* libzmusic.a */,
 				D26709A126A2F3F3006BEFE8 /* libbz2.a */,
@@ -3023,6 +3055,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D2DAA1A726A3D7C300169AEF /* fm_banks */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAA1A826A3D7C300169AEF /* gs-by-papiezak-and-sneakernets.wopn */,
+				D2DAA1A926A3D7C300169AEF /* GENMIDI.GS.wopl */,
+			);
+			path = fm_banks;
+			sourceTree = "<group>";
+		};
+		D2DAA1AD26A3D7C400169AEF /* soundfonts */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAA1AE26A3D7C400169AEF /* gzdoom.sf2 */,
+			);
+			path = soundfonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3033,6 +3082,7 @@
 				D259773426A299D4003023E3 /* Sources */,
 				D259773526A299D4003023E3 /* Frameworks */,
 				D259773626A299D4003023E3 /* Resources */,
+				D2DAA1BF26A4085600169AEF /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -3080,16 +3130,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2597C6926A29A04003023E3 /* readme.md in Resources */,
+				D2DAA1B226A3D7C400169AEF /* GENMIDI.GS.wopl in Resources */,
+				D2DAA1B826A3D7C400169AEF /* game_support.pk3 in Resources */,
 				D259774826A299D4003023E3 /* LaunchScreen.storyboard in Resources */,
-				D2597BEB26A29A04003023E3 /* zdoom.xpm in Resources */,
+				D2DAA1B626A3D7C400169AEF /* gzdoom.sf2 in Resources */,
+				D2DAA1B526A3D7C400169AEF /* game_widescreen_gfx.pk3 in Resources */,
 				D2597D0026A29A04003023E3 /* sc_man_scanner.re in Resources */,
-				D2597D1426A29A04003023E3 /* LICENSE.txt in Resources */,
+				D2DAA1B126A3D7C400169AEF /* gs-by-papiezak-and-sneakernets.wopn in Resources */,
 				D259774526A299D4003023E3 /* Assets.xcassets in Resources */,
-				D2597BE926A29A04003023E3 /* zdoom-info.plist in Resources */,
-				D2597BF126A29A04003023E3 /* CMakeLists.txt in Resources */,
-				D2597BE826A29A04003023E3 /* zdoom.icns in Resources */,
-				D259774326A299D4003023E3 /* Main.storyboard in Resources */,
+				D2DAA1B326A3D7C400169AEF /* gzdoom.pk3 in Resources */,
+				D2DAA1B426A3D7C400169AEF /* lights.pk3 in Resources */,
+				D2DAA1B726A3D7C400169AEF /* brightmaps.pk3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3353,7 +3404,6 @@
 				D2597C2726A29A04003023E3 /* anmtexture.cpp in Sources */,
 				D2597C4726A29A04003023E3 /* init.cpp in Sources */,
 				D2597D5B26A29A04003023E3 /* g_skill.cpp in Sources */,
-				D259774026A299D4003023E3 /* ViewController.swift in Sources */,
 				D2597DA026A29A04003023E3 /* hw_skyportal.cpp in Sources */,
 				D2597D4126A29A04003023E3 /* files.cpp in Sources */,
 				D2597D5626A29A04003023E3 /* d_dehacked.cpp in Sources */,
@@ -3449,7 +3499,6 @@
 				D2597C1426A29A04003023E3 /* r_vanillatrans.cpp in Sources */,
 				D2597C0E26A29A04003023E3 /* r_interpolate.cpp in Sources */,
 				D2597C1E26A29A04003023E3 /* d_protocol.cpp in Sources */,
-				D2597E1526A2A0D1003023E3 /* test.cpp in Sources */,
 				D2C8482626A31CB70067CED1 /* findfile.cpp in Sources */,
 				D2597D4826A29A04003023E3 /* palette.cpp in Sources */,
 				D2597C0326A29A04003023E3 /* g_dumpinfo.cpp in Sources */,
@@ -3540,7 +3589,6 @@
 				D2597CF126A29A04003023E3 /* poly_all.cpp in Sources */,
 				D2597CC426A29A04003023E3 /* hw_clock.cpp in Sources */,
 				D2597C2026A29A04003023E3 /* patchtexture.cpp in Sources */,
-				D259773E26A299D4003023E3 /* SceneDelegate.swift in Sources */,
 				D2597C3026A29A04003023E3 /* automaptexture.cpp in Sources */,
 				D2597D5D26A29A04003023E3 /* a_weapons.cpp in Sources */,
 				D2597CD726A29A04003023E3 /* vk_builders.cpp in Sources */,
@@ -3851,7 +3899,9 @@
 					IOS,
 					HAVE_VULKAN,
 					HAVE_SOFTPOLY,
+					SDL_DISABLE_IMMINTRIN_H,
 				);
+				HEADER_SEARCH_PATHS = "/usr/local/include/SDL2/**";
 				INFOPLIST_FILE = gzDoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3861,6 +3911,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/libs",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.gzDoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -3883,7 +3934,9 @@
 					IOS,
 					HAVE_VULKAN,
 					HAVE_SOFTPOLY,
+					SDL_DISABLE_IMMINTRIN_H,
 				);
+				HEADER_SEARCH_PATHS = "/usr/local/include/SDL2/**";
 				INFOPLIST_FILE = gzDoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3893,6 +3946,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/libs",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.gzDoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

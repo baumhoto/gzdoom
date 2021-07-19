@@ -109,8 +109,8 @@ void VulkanDevice::SelectFeatures()
 bool VulkanDevice::CheckRequiredFeatures(const VkPhysicalDeviceFeatures &f)
 {
 	return
-		f.samplerAnisotropy == VK_TRUE &&
-		f.fragmentStoresAndAtomics == VK_TRUE;
+    f.samplerAnisotropy == VK_TRUE;
+		//&& f.fragmentStoresAndAtomics == VK_TRUE;
 }
 
 void VulkanDevice::SelectPhysicalDevice()

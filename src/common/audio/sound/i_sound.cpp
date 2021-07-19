@@ -257,6 +257,7 @@ void I_InitSound ()
 	nosfx = !!Args->CheckParm ("-nosfx");
 
 	GSnd = NULL;
+    //nosound = true;
 	if (nosound)
 	{
 		GSnd = new NullSoundRenderer;

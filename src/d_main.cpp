@@ -3516,7 +3516,7 @@ static int D_DoomMain_Internal (void)
 			{
 				// At this point we cannot use the player's gender info yet so force 'male' here.
 				const char *str = GStrings.GetString(startupString[p], nullptr, 0);
-				if (str != NULL && str[0] != '\0')
+                if (str != NULL && str[0] != '\0')
 				{
 					Printf("%s\n", str);
 				}
@@ -3662,6 +3662,8 @@ static int D_DoomMain_Internal (void)
 	while (1);
 }
 
+
+
 int GameMain()
 {
 	int ret = 0;
@@ -3709,6 +3711,11 @@ int GameMain()
 	Args = nullptr;
 	return ret;
 }
+
+//int main(int argc, char *argv[])
+//{
+//    return GameMain();
+//}
 
 //==========================================================================
 //

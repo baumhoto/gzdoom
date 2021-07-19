@@ -110,6 +110,8 @@ FGameConfigFile::FGameConfigFile ()
 		SetValueForKey ("Path", user_app_support, true);
 		SetValueForKey ("Path", "$PROGDIR", true);
 		SetValueForKey ("Path", local_app_support, true);
+#elseif defined(IOS)
+        SetValueForKey ("Path", "$HOME/Documents", true);
 #elif !defined(__unix__)
 		SetValueForKey ("Path", "$HOME", true);
 		SetValueForKey ("Path", "$PROGDIR", true);
@@ -134,6 +136,8 @@ FGameConfigFile::FGameConfigFile ()
 		SetValueForKey ("Path", user_app_support, true);
 		SetValueForKey ("Path", "$PROGDIR", true);
 		SetValueForKey ("Path", local_app_support, true);
+#elseif defined(IOS)
+        SetValueForKey ("Path", "$HOME/Documents", true);
 #elif !defined(__unix__)
 		SetValueForKey ("Path", "$PROGDIR", true);
 #else
@@ -160,6 +164,9 @@ FGameConfigFile::FGameConfigFile ()
 		SetValueForKey("Path", "$PROGDIR/fm_banks", true);
 		SetValueForKey("Path", local_app_support + "/soundfonts", true);
 		SetValueForKey("Path", local_app_support + "/fm_banks", true);
+#elseif defined(IOS)
+        SetValueForKey ("Path", "$HOME/Documents/soundfonts", true);
+        SetValueForKey ("Path", "$HOME/Documents/fm_banks", true);
 #elif !defined(__unix__)
 		SetValueForKey("Path", "$PROGDIR/soundfonts", true);
 		SetValueForKey("Path", "$PROGDIR/fm_banks", true);

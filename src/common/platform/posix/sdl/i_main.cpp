@@ -172,8 +172,9 @@ int main (int argc, char **argv)
 
 	printf("\n");
 	
-	Args = new FArgs(argc, argv);
+    Args = new FArgs(argc, argv);
 
+    char dummy[PATH_MAX];
 	// Should we even be doing anything with progdir on Unix systems?
 	char program[PATH_MAX];
 	if (realpath (argv[0], program) == NULL)
@@ -182,18 +183,31 @@ int main (int argc, char **argv)
 	if (slash != NULL)
 	{
 		*(slash + 1) = '\0';
-		progdir = program;
+        progdir = program;
 	}
 	else
 	{
 		progdir = "./";
 	}
+    
+#ifdef IOS
+        FString path = FString(getenv("HOME"));
+        path.AppendFormat("%s", "/Documents");
+        progdir = path;
+        
+//        sprintf(dummy, "%s%s", getenv("HOME"), "/Documents/dummy.txt");
+//        fopen(dummy, "wb");
+#endif
 	
 	I_StartupJoysticks();
 
 	const int result = GameMain();
 
-	SDL_Quit();
+    SDL_Quit();
+	return 0;
+}
 
-	return result;
+static void Sys_AtExit (void)
+{
+    
 }
