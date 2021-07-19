@@ -11,7 +11,7 @@
 		D204362B26A4B021009A4A01 /* libopenal.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D204362926A4B021009A4A01 /* libopenal.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D204362D26A4B1DD009A4A01 /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; };
 		D204362E26A4B1DD009A4A01 /* libMoltenVK.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D259773C26A299D4003023E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259773B26A299D4003023E3 /* AppDelegate.swift */; };
+		D22CBD7826A58938008B9326 /* SDL_uikitviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */; };
 		D259774526A299D4003023E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D259774426A299D4003023E3 /* Assets.xcassets */; };
 		D259774826A299D4003023E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D259774626A299D4003023E3 /* LaunchScreen.storyboard */; };
 		D2597BDC26A29A04003023E3 /* glnodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259775126A29A03003023E3 /* glnodes.cpp */; };
@@ -502,8 +502,9 @@
 		D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMoltenVK.dylib; path = libs/libMoltenVK.dylib; sourceTree = "<group>"; };
 		D213F77C26A2C055000970A2 /* PoolAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PoolAlloc.h; path = ../libraries/glslang/glslang/Include/PoolAlloc.h; sourceTree = "<group>"; };
 		D213F77D26A2C378000970A2 /* sc_man_scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sc_man_scanner.h; path = ../build2/src/sc_man_scanner.h; sourceTree = "<group>"; };
+		D22CBD7626A58938008B9326 /* gzDoom-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gzDoom-Bridging-Header.h"; sourceTree = "<group>"; };
+		D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDL_uikitviewcontroller.swift; sourceTree = "<group>"; };
 		D259773826A299D4003023E3 /* gzDoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gzDoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D259773B26A299D4003023E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D259774226A299D4003023E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D259774426A299D4003023E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D259774726A299D4003023E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1462,7 +1463,8 @@
 		D259773A26A299D4003023E3 /* gzDoom */ = {
 			isa = PBXGroup;
 			children = (
-				D259773B26A299D4003023E3 /* AppDelegate.swift */,
+				D22CBD7626A58938008B9326 /* gzDoom-Bridging-Header.h */,
+				D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */,
 				D259774126A299D4003023E3 /* Main.storyboard */,
 				D259774426A299D4003023E3 /* Assets.xcassets */,
 				D259774626A299D4003023E3 /* LaunchScreen.storyboard */,
@@ -3484,12 +3486,12 @@
 				D2597DF826A29A04003023E3 /* hu_scores.cpp in Sources */,
 				D2597DC726A29A04003023E3 /* t_load.cpp in Sources */,
 				D2597BE126A29A04003023E3 /* postprocessor.cpp in Sources */,
-				D259773C26A299D4003023E3 /* AppDelegate.swift in Sources */,
 				D2597BED26A29A04003023E3 /* doomstat.cpp in Sources */,
 				D2597CC926A29A04003023E3 /* hw_cvars.cpp in Sources */,
 				D2597DCA26A29A04003023E3 /* t_parse.cpp in Sources */,
 				D2597C2526A29A04003023E3 /* stbtexture.cpp in Sources */,
 				D2597D2E26A29A04003023E3 /* c_cvars.cpp in Sources */,
+				D22CBD7826A58938008B9326 /* SDL_uikitviewcontroller.swift in Sources */,
 				D2597D9A26A29A04003023E3 /* hw_dynlightdata.cpp in Sources */,
 				D2597D1026A29A04003023E3 /* v_draw.cpp in Sources */,
 				D2597C1526A29A04003023E3 /* colormaps.cpp in Sources */,
@@ -3856,6 +3858,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/include/SDL2/**",
 					"/opt/homebrew/include/SDL2/**",
+					"${SRCROOT}/include",
 				);
 				INFOPLIST_FILE = gzDoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3869,6 +3872,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.gzDoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gzDoom/gzDoom-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3894,6 +3898,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/include/SDL2/**",
 					"/opt/homebrew/include/SDL2/**",
+					"${SRCROOT}/include",
 				);
 				INFOPLIST_FILE = gzDoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3907,6 +3912,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baumhoto.gzDoom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gzDoom/gzDoom-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
