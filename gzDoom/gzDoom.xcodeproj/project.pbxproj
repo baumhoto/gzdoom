@@ -3901,7 +3901,10 @@
 					HAVE_SOFTPOLY,
 					SDL_DISABLE_IMMINTRIN_H,
 				);
-				HEADER_SEARCH_PATHS = "/usr/local/include/SDL2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/SDL2/**",
+					"/opt/homebrew/include/SDL2/**",
+				);
 				INFOPLIST_FILE = gzDoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3936,7 +3939,10 @@
 					HAVE_SOFTPOLY,
 					SDL_DISABLE_IMMINTRIN_H,
 				);
-				HEADER_SEARCH_PATHS = "/usr/local/include/SDL2/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/SDL2/**",
+					"/opt/homebrew/include/SDL2/**",
+				);
 				INFOPLIST_FILE = gzDoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
