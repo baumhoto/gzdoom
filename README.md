@@ -3,7 +3,7 @@
 Be warned this is a barely working port and there is lots of stuff that doesn't work properly but it runs and can be controlled via mouse/keyboard on iPadOs.
 
 - app doesn exit cleanly (will hang) force quit via app switcher
-- keyboard input in console and menu (e.g. savegames) doesn't work
+- keyboard text input in console and menu (e.g. savegames) doesn't work...
 - the full settings menu is available but be warned that things might break.. (just delete the gzdoom.ini file in the config folder if that happens)
 - gamepad support does not work
 - lots of other stuff
@@ -16,7 +16,9 @@ On a Mac
 - open xcode project in gzdoom/gzdoom/gzdoom.xcodeproj
 - adjust developemt team
 - deploy to device
-- start app first time (app will crash)-> because data files can not be found but now there should be a gzdoom folder in the Files App under "On my iPad". there copy all the files from 
+- start app first time (app will crash)-> because data files can not be found but now there should be a gzdoom folder in the Files App under "On my iPad". there copy all the files from the support folder inside the gzdoom/support folder
+- afterwards add an IWAD file of your choice e.g doom.wad or heretic.wad etc. 
+- Start app again. Controlling the menu via keyboard works. Start game and use WSAD/mouse to run game. Currently saving is an issue as text input is not working.
 
 
 # Welcome to GZDoom!
