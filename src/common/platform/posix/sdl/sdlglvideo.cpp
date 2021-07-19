@@ -137,8 +137,8 @@ namespace Priv
 			win_w = bounds.w * 8 / 10;
 			win_h = bounds.h * 8 / 10;
 		}
-        win_w = 1366;
-        win_h = 1024;
+        win_w = 2732;
+        win_h = 2048;
 
 		FString caption;
 		caption.Format(GAMENAME " %s (%s)", GetVersionString(), GetGitTime());
@@ -147,7 +147,7 @@ namespace Priv
 #else
 		const uint32_t windowFlags = (win_maximized ? SDL_WINDOW_MAXIMIZED : 0) | SDL_WINDOW_RESIZABLE | extraFlags;
 #endif
-        Priv::window = SDL_CreateWindow ("", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, win_w, win_h, (SDL_WINDOW_HIDDEN | SDL_WINDOW_VULKAN));
+        Priv::window = SDL_CreateWindow ("", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, win_w, win_h, (SDL_WINDOW_HIDDEN | SDL_WINDOW_VULKAN | SDL_WINDOW_ALLOW_HIGHDPI));
         
 //        SDL_CreateWindow(caption,
 //			(win_x <= 0) ? SDL_WINDOWPOS_CENTERED_DISPLAY(vid_adapter) : win_x,

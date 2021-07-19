@@ -39,6 +39,7 @@
 #include "cmdlib.h"
 #include "printf.h"
 #include "engineerrors.h"
+#include "gi.h"
 
 #include "version.h"	// for GAMENAME
 
@@ -209,7 +210,11 @@ FString M_GetScreenshotsPath()
 
 FString M_GetSavegamesPath()
 {
+#ifdef IOS
+    return NicePath("$HOME/Documents/Savegames/" + gameinfo.ConfigName + "/");
+#else
 	return NicePath("$HOME/" GAME_DIR "/");
+#endif
 }
 
 //===========================================================================
