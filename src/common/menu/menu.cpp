@@ -32,6 +32,8 @@
 **
 */
 
+#include <SDL.h>
+
 #include "c_dispatch.h"
 #include "d_gui.h"
 #include "c_buttons.h"
@@ -495,7 +497,7 @@ void M_ActivateMenu(DMenu *menu)
 DEFINE_ACTION_FUNCTION(DMenu, ActivateMenu)
 {
 	PARAM_SELF_PROLOGUE(DMenu);
-	M_ActivateMenu(self);
+    M_ActivateMenu(self);
 	return 0;
 }
 
@@ -534,7 +536,16 @@ void M_SetMenu(FName menu, int param)
 				{
 					VMValue params[3] = { newmenu, CurrentMenu, ld };
 					VMCall(func, params, 3, nullptr, 0);
+                    printf("%s", menu.GetChars());
 				}
+#ifdef IOS
+                printf("%s", menu.GetChars());
+                if(strcmp(menu.GetChars(), "Savegamemenu") == 0)
+                {
+                    SDL_StartTextInput();
+                }
+#endif
+                
 				M_ActivateMenu(newmenu);
 			}
 		}
@@ -882,6 +893,13 @@ void M_Drawer (void)
 void M_ClearMenus()
 {
 	if (menuactive == MENU_Off) return;
+    
+#ifdef IOS
+    if(SDL_IsTextInputActive())
+    {
+        SDL_StopTextInput();
+    }
+#endif
 
 	transition.previous = transition.current = nullptr;
 	transition.dir = 0;
