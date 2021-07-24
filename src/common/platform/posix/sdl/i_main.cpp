@@ -194,9 +194,6 @@ int main (int argc, char **argv)
         FString path = FString(getenv("HOME"));
         path.AppendFormat("%s", "/Documents");
         progdir = path;
-        
-//        sprintf(dummy, "%s%s", getenv("HOME"), "/Documents/dummy.txt");
-//        fopen(dummy, "wb");
 #endif
 	
 	I_StartupJoysticks();
@@ -204,6 +201,10 @@ int main (int argc, char **argv)
 	const int result = GameMain();
 
     SDL_Quit();
+#ifdef IOS
+    exit(0);
+#endif
+    
 	return 0;
 }
 

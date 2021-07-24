@@ -33,6 +33,7 @@
 */
 
 #include <string>
+#include <SDL.h>
 
 #include "templates.h"
 #include "version.h"
@@ -733,6 +734,9 @@ void C_ToggleConsole ()
 	{
 		gameaction = ga_fullconsole;
 		togglestate = c_down;
+#ifdef IOS
+        SDL_StartTextInput();
+#endif
 	}
 	else if (!chatmodeon && (ConsoleState == c_up || ConsoleState == c_rising) && menuactive == MENU_Off)
 	{
@@ -741,6 +745,9 @@ void C_ToggleConsole ()
 		TabbedLast = false;
 		TabbedList = false;
 		togglestate = c_falling;
+#ifdef IOS
+        SDL_StartTextInput();
+#endif
 	}
 	else if (gamestate != GS_FULLCONSOLE && gamestate != GS_STARTUP)
 	{
@@ -760,6 +767,11 @@ void C_HideConsole ()
 		ConsoleState = c_up;
 		ConBottom = 0;
 		HistPos = NULL;
+#ifdef IOS
+        if( SDL_IsTextInputActive()) {
+            SDL_StopTextInput();
+        }
+#endif
 	}
 }
 
