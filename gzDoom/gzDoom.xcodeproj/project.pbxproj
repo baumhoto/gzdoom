@@ -445,6 +445,7 @@
 		D2597E0A26A29A04003023E3 /* nodebuild_events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2597BD726A29A04003023E3 /* nodebuild_events.cpp */; };
 		D2597E0B26A29A04003023E3 /* nodebuild_extract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2597BD826A29A04003023E3 /* nodebuild_extract.cpp */; };
 		D2597E0C26A29A04003023E3 /* nodebuild_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2597BD926A29A04003023E3 /* nodebuild_utility.cpp */; };
+		D2638C6626ADA0C800BAA9BE /* pl_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2638C6526ADA0C800BAA9BE /* pl_ios.mm */; };
 		D26709A026A2EAD5006BEFE8 /* libOSDependent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D267099F26A2EAC8006BEFE8 /* libOSDependent.a */; };
 		D26709A426A2F404006BEFE8 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D26709A326A2F3F3006BEFE8 /* libjpeg.a */; };
 		D26709A526A2F404006BEFE8 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D26709A226A2F3F3006BEFE8 /* libz.a */; };
@@ -1360,6 +1361,7 @@
 		D2597E0E26A29AB8003023E3 /* gdtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gdtoa.h; path = ../libraries/gdtoa/gdtoa.h; sourceTree = "<group>"; };
 		D2597E0F26A29B05003023E3 /* zmusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zmusic.h; path = ../bin/windows/zmusic/include/zmusic.h; sourceTree = "<group>"; };
 		D2597E1026A29D2B003023E3 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../libraries/glslang/glslang/Include/Common.h; sourceTree = "<group>"; };
+		D2638C6526ADA0C800BAA9BE /* pl_ios.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pl_ios.mm; sourceTree = "<group>"; };
 		D267099F26A2EAC8006BEFE8 /* libOSDependent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOSDependent.a; path = libs/libOSDependent.a; sourceTree = "<group>"; };
 		D26709A126A2F3F3006BEFE8 /* libbz2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbz2.a; path = libs/libbz2.a; sourceTree = "<group>"; };
 		D26709A226A2F3F3006BEFE8 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = libs/libz.a; sourceTree = "<group>"; };
@@ -1929,6 +1931,7 @@
 		D259784626A29A03003023E3 /* posix */ = {
 			isa = PBXGroup;
 			children = (
+				D2638C6426ADA0C800BAA9BE /* uikit */,
 				D259784A26A29A03003023E3 /* dikeys.h */,
 				D259784B26A29A03003023E3 /* i_system_posix.cpp */,
 				D259784C26A29A03003023E3 /* readme.md */,
@@ -2966,6 +2969,14 @@
 			name = headers;
 			sourceTree = "<group>";
 		};
+		D2638C6426ADA0C800BAA9BE /* uikit */ = {
+			isa = PBXGroup;
+			children = (
+				D2638C6526ADA0C800BAA9BE /* pl_ios.mm */,
+			);
+			path = uikit;
+			sourceTree = "<group>";
+		};
 		D2C8482D26A328A90067CED1 /* swrenderer */ = {
 			isa = PBXGroup;
 			children = (
@@ -3196,6 +3207,7 @@
 				D2597D0926A29A04003023E3 /* renderstyle.cpp in Sources */,
 				D2597D0126A29A04003023E3 /* m_joy.cpp in Sources */,
 				D2597DF326A29A04003023E3 /* a_flashfader.cpp in Sources */,
+				D2638C6626ADA0C800BAA9BE /* pl_ios.mm in Sources */,
 				D2597DF226A29A04003023E3 /* p_sight.cpp in Sources */,
 				D2597D2C26A29A04003023E3 /* c_expr.cpp in Sources */,
 				D2597C3C26A29A04003023E3 /* imagetexture.cpp in Sources */,

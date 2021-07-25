@@ -80,6 +80,9 @@ EXTERN_CVAR (Int, vid_defwidth)
 EXTERN_CVAR (Int, vid_defheight)
 EXTERN_CVAR (Int, vid_preferbackend)
 EXTERN_CVAR (Bool, cl_capfps)
+#ifdef IOS
+EXTERN_CVAR(Bool, vid_hidpi)
+#endif
 
 // PUBLIC DATA DEFINITIONS -------------------------------------------------
 
@@ -137,22 +140,23 @@ namespace Priv
 			win_w = bounds.w * 8 / 10;
 			win_h = bounds.h * 8 / 10;
 		}
-        win_w = 1366;
-        win_h = 1024;
-
+        
 		FString caption;
 		caption.Format(GAMENAME " %s (%s)", GetVersionString(), GetGitTime());
 #ifdef IOS
-        const uint32_t windowFlags = extraFlags;
+        win_w = GetScreenWidth(vid_hidpi);
+        win_h = GetScreenHeight(vid_hidpi);
+        uint32_t windowFlags = SDL_WINDOW_VULKAN | SDL_WINDOW_HIDDEN;
+        if(vid_hidpi)
+            windowFlags |= SDL_WINDOW_ALLOW_HIGHDPI;
+        Priv::window = SDL_CreateWindow ("", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, win_w, win_h, windowFlags);
 #else
 		const uint32_t windowFlags = (win_maximized ? SDL_WINDOW_MAXIMIZED : 0) | SDL_WINDOW_RESIZABLE | extraFlags;
+                SDL_CreateWindow(caption,
+                    (win_x <= 0) ? SDL_WINDOWPOS_CENTERED_DISPLAY(vid_adapter) : win_x,
+                    (win_y <= 0) ? SDL_WINDOWPOS_CENTERED_DISPLAY(vid_adapter) : win_y,
+                    win_w, win_h, windowFlags);
 #endif
-        Priv::window = SDL_CreateWindow ("", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, win_w, win_h, (SDL_WINDOW_HIDDEN | SDL_WINDOW_VULKAN | SDL_WINDOW_ALLOW_HIGHDPI));
-        
-//        SDL_CreateWindow(caption,
-//			(win_x <= 0) ? SDL_WINDOWPOS_CENTERED_DISPLAY(vid_adapter) : win_x,
-//			(win_y <= 0) ? SDL_WINDOWPOS_CENTERED_DISPLAY(vid_adapter) : win_y,
-//			win_w, win_h, windowFlags);
         
         if(!Priv::window)
             printf("%s",SDL_GetError());
@@ -160,26 +164,7 @@ namespace Priv
 		if (Priv::window != nullptr)
 		{
 			// Enforce minimum size limit
-			//SDL_SetWindowMinimumSize(Priv::window, VID_MIN_WIDTH, VID_MIN_HEIGHT);
-            static SDL_DisplayMode mode;
-            const int sdlmodes = SDL_GetNumDisplayModes(0);
-            int i;
-
-            for (i = 0; i < sdlmodes; i++)
-            {
-                if (SDL_GetDisplayMode(0, i, &mode) != 0)
-                    continue;
-                
-                if (mode.w == win_w && mode.h == win_h
-                    //&& SDL_BITSPERPIXEL(mode.format) ==
-                    && mode.refresh_rate == 120)
-                {
-                    break;
-                }
-            }
-            //SDL_SetWindowDisplayMode(p, <#const SDL_DisplayMode *mode#>)
-            SDL_SetWindowDisplayMode (Priv::window, &mode);
-            SDL_ShowWindow(Priv::window);
+			SDL_SetWindowMinimumSize(Priv::window, VID_MIN_WIDTH, VID_MIN_HEIGHT);
 		}
 	}
 
@@ -438,6 +423,7 @@ SDLVideo::SDLVideo ()
 #ifdef HAVE_VULKAN
 #ifdef IOS
     Priv::vulkanEnabled = true;
+    vid_preferbackend = 1;
 #else
     Priv::vulkanEnabled = vid_preferbackend == 1;
 #endif
@@ -505,8 +491,12 @@ DFrameBuffer *SDLVideo::CreateFrameBuffer ()
 #endif
 	if (fb == nullptr)
 	{
-		//baumhoto fb = new OpenGLRenderer::OpenGLFrameBuffer(0, vid_fullscreen);
-	}
+#ifdef IOS
+        /// TODO throw exception 
+#else
+		fb = new OpenGLRenderer::OpenGLFrameBuffer(0, vid_fullscreen);
+#endif
+    }
 
 	return fb;
 }

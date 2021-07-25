@@ -34,5 +34,11 @@ void I_PolyPresentDeinit();
 // the original DOS version (if the Heretic/Hexen source is any indicator).
 void I_WaitVBL(int count);
 
+#ifdef IOS
+int GetScreenWidth(bool retina);
+
+int GetScreenHeight(bool retina);
+#endif
+
 
 #endif // __I_VIDEO_H__
