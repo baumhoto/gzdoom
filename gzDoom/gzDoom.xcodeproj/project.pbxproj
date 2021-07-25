@@ -505,7 +505,6 @@
 		D22CBD7626A58938008B9326 /* gzDoom-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gzDoom-Bridging-Header.h"; sourceTree = "<group>"; };
 		D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDL_uikitviewcontroller.swift; sourceTree = "<group>"; };
 		D259773826A299D4003023E3 /* gzDoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gzDoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D259774226A299D4003023E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D259774426A299D4003023E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D259774726A299D4003023E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D259774926A299D4003023E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1465,7 +1464,6 @@
 			children = (
 				D22CBD7626A58938008B9326 /* gzDoom-Bridging-Header.h */,
 				D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */,
-				D259774126A299D4003023E3 /* Main.storyboard */,
 				D259774426A299D4003023E3 /* Assets.xcassets */,
 				D259774626A299D4003023E3 /* LaunchScreen.storyboard */,
 				D259774926A299D4003023E3 /* Info.plist */,
@@ -3553,14 +3551,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D259774126A299D4003023E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D259774226A299D4003023E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D259774626A299D4003023E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

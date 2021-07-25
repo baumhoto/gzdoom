@@ -22,6 +22,7 @@ extension SDL_uikitviewcontroller {
     }
     
     open override var prefersHomeIndicatorAutoHidden: Bool {
+        setNeedsUpdateOfPrefersPointerLocked()
         return true
     }
 }
