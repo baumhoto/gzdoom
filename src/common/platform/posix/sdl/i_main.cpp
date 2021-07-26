@@ -197,18 +197,13 @@ int main (int argc, char **argv)
 #endif
 	
 	I_StartupJoysticks();
-
 	const int result = GameMain();
-
+#ifndef IOS
     SDL_Quit();
-#ifdef IOS
-    exit(0);
 #endif
+//#ifdef IOS
+//    exit(0);
+//#endif
     
 	return 0;
-}
-
-static void Sys_AtExit (void)
-{
-    
 }

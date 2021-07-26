@@ -36,6 +36,7 @@
 extern bool		advancedemo;
 extern bool hud_toggled;
 void D_ToggleHud();
+void ShowFrame(void*);
 
 struct event_t;
 
