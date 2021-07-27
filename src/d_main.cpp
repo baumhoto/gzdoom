@@ -39,6 +39,9 @@
 #include <unistd.h>
 #endif
 
+
+#include <SDL.h>
+
 #include <math.h>
 #include <assert.h>
 
@@ -146,6 +149,7 @@ extern void ReadStatistics();
 extern void M_SetDefaultMode ();
 extern void G_NewInit ();
 extern void SetupPlayerClasses ();
+extern SDL_Window* I_GetWindow();
 void DeinitMenus();
 void CloseNetwork();
 void P_Shutdown();
@@ -189,6 +193,9 @@ EXTERN_CVAR (Bool, sv_unlimited_pickup)
 EXTERN_CVAR (Bool, r_drawplayersprites)
 EXTERN_CVAR (Bool, show_messages)
 EXTERN_CVAR(Bool, ticker)
+#ifdef IOS
+EXTERN_CVAR(Int, vid_maxfps)
+#endif
 
 extern bool setmodeneeded;
 extern bool demorecording;
@@ -317,6 +324,7 @@ FString lastIWAD;
 int restart = 0;
 bool AppActive = true;
 bool playedtitlemusic;
+bool shouldExit = false;
 
 cycle_t FrameCycles;
 
@@ -1248,13 +1256,14 @@ void D_DoomLoop ()
 	int lasttic = 0;
 
 	// Clamp the timer to TICRATE until the playloop has been entered.
+#ifndef IOS
 	r_NoInterpolate = true;
-	Page.SetInvalid();
-	Subtitle = nullptr;
-	Advisory = nullptr;
+    Page.SetInvalid();
+    Subtitle = nullptr;
+    Advisory = nullptr;
+#endif
 
 	vid_cursor.Callback();
-
 	for (;;)
 	{
 		try
@@ -1313,6 +1322,9 @@ void D_DoomLoop ()
 			Printf("%s", error.stacktrace.GetChars());
 			D_ErrorCleanup();
 		}
+#ifdef IOS
+        return;
+#endif
 	}
 }
 
@@ -3650,18 +3662,87 @@ static int D_DoomMain_Internal (void)
 
 		I_UpdateWindowTitle();
 
+#ifndef IOS
 		D_DoomLoop ();		// this only returns if a 'restart' CCMD is given.
-		// 
-		// Clean up after a restart
-		//
+        //
+        // Clean up after a restart
+        //
 
-		D_Cleanup();
+        D_Cleanup();
 
-		gamestate = GS_STARTUP;
+        gamestate = GS_STARTUP;
 	}
 	while (1);
+#endif
+#ifdef IOS
+    }
+while(0);
+Page.SetInvalid();
+Subtitle = nullptr;
+Advisory = nullptr;
+int maxFpsForDisplay = (int)GetMaximumFps();
+int refreshInterval = maxFpsForDisplay / vid_maxfps;
+if (refreshInterval < 1) {
+    refreshInterval = 1;
+}
+// refreshInterval 1 = Displays Max FPS, 2 = Display Halfs FPS etc. Values < 0 are not allowed
+SDL_iPhoneSetAnimationCallback(I_GetWindow(), refreshInterval, ShowFrame, NULL);
+return 0;
+#endif
 }
 
+void D_CleanupInternal()
+{
+    // Unless something really bad happened, the game should only exit through this single point in the code.
+    // No more 'exit', please.
+    D_Cleanup();
+    CloseNetwork();
+    GC::FinalGC = true;
+    GC::FullGC();
+    GC::DelSoftRootHead();    // the soft root head will not be collected by a GC so we have to do it explicitly
+    C_DeinitConsole();
+    R_DeinitColormaps();
+    R_Shutdown();
+    I_ShutdownGraphics();
+    I_ShutdownInput();
+    M_SaveDefaultsFinal();
+    DeleteStartupScreen();
+    delete Args;
+    Args = nullptr;
+}
+
+
+void ShowFrame(void*)
+{
+    try {
+            if(shouldExit) {
+                D_Cleanup();
+//                D_CleanupInternal();
+                exit(0);
+            }
+            else {
+                D_DoomLoop();
+            }
+        }
+        catch (const CExitEvent &exit)    // This is a regular exit initiated from deeply nested code.
+        {
+            shouldExit = true;
+        }
+        catch (const std::exception &error)
+        {
+            shouldExit = false;
+        }
+}
+
+#ifdef IOS // needs to be defined outside GameMain() as we return from it
+ConsoleCallbacks cb = {
+    D_UserInfoChanged,
+    D_SendServerInfoChange,
+    D_SendServerFlagChange,
+    G_GetUserCVar,
+    []() { return gamestate != GS_FULLCONSOLE && gamestate != GS_STARTUP; }
+};
+#endif
 
 
 int GameMain()
@@ -3669,6 +3750,7 @@ int GameMain()
 	int ret = 0;
 	GameTicRate = TICRATE;
 
+#ifndef IOS
 	ConsoleCallbacks cb = {
 		D_UserInfoChanged,
 		D_SendServerInfoChange,
@@ -3676,6 +3758,7 @@ int GameMain()
 		G_GetUserCVar,
 		[]() { return gamestate != GS_FULLCONSOLE && gamestate != GS_STARTUP; }
 	};
+#endif
 
 	C_InstallHandlers(&cb);
 	SetConsoleNotifyBuffer();
@@ -3693,24 +3776,16 @@ int GameMain()
 		I_ShowFatalError(error.what());
 		ret = -1;
 	}
-	// Unless something really bad happened, the game should only exit through this single point in the code.
-	// No more 'exit', please.
-	D_Cleanup();
-	CloseNetwork();
-	GC::FinalGC = true;
-	GC::FullGC();
-	GC::DelSoftRootHead();	// the soft root head will not be collected by a GC so we have to do it explicitly
-	C_DeinitConsole();
-	R_DeinitColormaps();
-	R_Shutdown();
-	I_ShutdownGraphics();
-	I_ShutdownInput();
-	M_SaveDefaultsFinal();
-	DeleteStartupScreen();
-	delete Args;
-	Args = nullptr;
+    if(shouldExit) {
+        D_CleanupInternal();
+#ifdef IOS
+        exit(0);
+#endif
+    }
 	return ret;
 }
+
+
 
 //int main(int argc, char *argv[])
 //{

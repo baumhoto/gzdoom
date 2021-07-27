@@ -21,3 +21,7 @@ int GetScreenHeight(bool retina) {
     
     return [[UIScreen mainScreen] bounds].size.height;
 }
+
+long GetMaximumFps() {
+    return [[UIScreen mainScreen] maximumFramesPerSecond];
+}

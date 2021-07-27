@@ -38,6 +38,8 @@ void I_WaitVBL(int count);
 int GetScreenWidth(bool retina);
 
 int GetScreenHeight(bool retina);
+
+long GetMaximumFps();
 #endif
 
 
