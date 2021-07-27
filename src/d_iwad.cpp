@@ -680,6 +680,10 @@ int FIWadManager::IdentifyVersion (TArray<FString> &wadfiles, const char *iwad, 
 					  "1. Place one or more of these wads in the same directory as " GAMENAME ".\n"
 					  "2. Edit your " GAMENAMELOWERCASE "-username.ini and add the directories of your iwads\n"
 					  "to the list beneath [IWADSearch.Directories]");
+#elif defined(IOS)
+                        "Please select 'Open instructions' to see detailed instructions on howto setup gzDoom on your device.\n\n"
+                        "Select 'Ok' to close this dialog\n\n"
+        "The app will be closed.");
 #elif defined(__APPLE__)
 					  "1. Place one or more of these wads in ~/Library/Application Support/" GAMENAMELOWERCASE "/\n"
 					  "2. Edit your ~/Library/Preferences/" GAMENAMELOWERCASE ".ini and add the directories\n"

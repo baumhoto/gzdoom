@@ -25,3 +25,7 @@ int GetScreenHeight(bool retina) {
 long GetMaximumFps() {
     return [[UIScreen mainScreen] maximumFramesPerSecond];
 }
+
+void openUrl() {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/baumhoto/gzdoom/blob/master/README.md"]];
+}

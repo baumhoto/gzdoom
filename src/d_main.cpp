@@ -3163,7 +3163,15 @@ static int D_DoomMain_Internal (void)
 	wad = BaseFileSearch (BASEWAD, NULL, true, GameConfig);
 	if (wad == NULL)
 	{
+#ifdef IOS
+        I_FatalError ("Cannot find " BASEWAD ".\n\n This is expected if you started the app for the first time.\n\n"
+                      "Please select 'Open instructions' to see detailed instructions on howto setup gzDoom on your device.\n\n"
+                      "Select 'Ok' to close this dialog\n\n"
+                      "The app will be closed."
+                      );
+#else
 		I_FatalError ("Cannot find " BASEWAD);
+#endif
 	}
 	FString basewad = wad;
 
@@ -3770,11 +3778,13 @@ int GameMain()
 	catch (const CExitEvent &exit)	// This is a regular exit initiated from deeply nested code.
 	{
 		ret = exit.Reason();
+        shouldExit = true;
 	}
 	catch (const std::exception &error)
 	{
 		I_ShowFatalError(error.what());
 		ret = -1;
+        shouldExit = true;
 	}
     if(shouldExit) {
         D_CleanupInternal();

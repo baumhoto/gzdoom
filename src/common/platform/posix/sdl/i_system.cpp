@@ -58,7 +58,9 @@
 #include "c_cvars.h"
 #include "palutil.h"
 #include "st_start.h"
-
+#ifdef IOS
+#include "i_video.h"
+#endif
 
 #ifndef NO_GTK
 bool I_GtkAvailable ();
@@ -122,7 +124,28 @@ void Unix_I_FatalError(const char* errortext)
 
 void I_ShowFatalError(const char *message)
 {
-#ifdef __APPLE__
+#ifdef IOS
+    const SDL_MessageBoxButtonData buttons[] = {
+           { /* .flags, .buttonid, .text */        0, 0, "Ok" },
+           { /* .flags, .buttonid, .text */        0, 1, "Open instructions" },
+       };
+       const SDL_MessageBoxData messageboxdata = {
+           SDL_MESSAGEBOX_INFORMATION, /* .flags */
+           NULL, /* .window */
+           "gzDoom Error", /* .title */
+           message, /* .message */
+           SDL_arraysize(buttons), /* .numbuttons */
+           buttons, /* .buttons */
+           NULL
+       };
+       int buttonid;
+    if (SDL_ShowMessageBox(&messageboxdata, &buttonid) < 0) {
+       }
+    if (buttonid == 1)
+    {
+        openUrl();
+    }
+#elif __APPLE__
 	Mac_I_FatalError(message);
 #elif defined __unix__
 	Unix_I_FatalError(message);

@@ -40,6 +40,8 @@ int GetScreenWidth(bool retina);
 int GetScreenHeight(bool retina);
 
 long GetMaximumFps();
+
+void openUrl();
 #endif
 
 
