@@ -262,7 +262,13 @@ public:
 		for(int i = 0;i < SDL_NumJoysticks();i++)
 		{
 			SDLInputJoystick *device = new SDLInputJoystick(i);
-			if(device->IsValid())
+#ifdef IOS
+            // for now hide the iOS Acceleromter
+            if(strcmp(device->GetName(),"iOS Accelerometer") == 0) {
+                continue;
+            }
+#endif
+			if(device->IsValid()) //&& strcmp(device->GetName(),"iOS Accelerometer") != 0)
 				Joysticks.Push(device);
 			else
 				delete device;
