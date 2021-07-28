@@ -754,6 +754,9 @@ void C_ToggleConsole ()
 		ConsoleState = c_rising;
 		C_FlushDisplay();
 		togglestate = c_rising;
+#ifdef IOS
+        SDL_StopTextInput();
+#endif
 	}
 	else return;
 	// This must be done as an event callback because the client code does not control the console toggling.
