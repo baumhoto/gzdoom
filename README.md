@@ -1,13 +1,10 @@
-# GZDoom fork for iPadOs WIP
+# GZDoom fork for iPadOS
 
-Be warned this is a barely working port and there is lots of stuff that doesn't work properly but it runs and can be controlled via mouse/keyboard on iPadOs.
+Be warned this is a WIP  and there is lots of stuff that might break but it runs and can be controlled via mouse/keyboard/gamepad on iPadOs. You need to compile/deploy it yourself.
 
-- app doesn exit cleanly (will hang) force quit via app switcher
-- keyboard text input in console and menu (e.g. savegames) doesn't work...
-- the full settings menu is available but be warned that things might break.. (just delete the gzdoom.ini file in the config folder if that happens)
-- gamepad support does not work
-- lots of other stuff
+[Build/Install instructions](https://github.com/baumhoto/gzdoom/blob/master/INSTALL.MD)
 
+![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_ipad.jpg)
 
 
 # Welcome to GZDoom!

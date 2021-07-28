@@ -4,26 +4,43 @@ I’ve been recently going through the process of getting gzDoom to run on iPadO
 
 ## Some warnings
 
-**Warning:** This a a very bare bones port where stuff is missing (no touch support) is broken (gamepad), but it works on iPadOs with an external mouse and keyboard (tested with Smart-Keyboard, Magic Keyboard and bluetooth mouse). 
+**Warning:** This a a very bare bones port where stuff is missing (no touch support) or might be broken, but it works on iPadOs with an external mouse and keyboard (tested with Smart-Keyboard, Magic Keyboard and bluetooth mouse) and gamepad (tested with XBox Controller). 
 
-**Warning:** iOS.  Technically it works but i just ran it a few times. As no touch input is supported you need a bluetooth keyboard/mouse or Gamepad. (Need bluetooth-keyboard anyway as you need to navigate the options menu to configure the controller). The few times i tested it chrashed somtimes but i haven't looked into it...
+**Warning:** iOS.  Technically it works but i just ran it a few times. As no touch input is supported you need a bluetooth keyboard/mouse to naviate the menu. I ran into some crashed on iOS, so 
 
-**Warning:** Due to the way iPadOS/iOS work it’s not possible to distribute an app via the internet thus it needs to be compiled and deployed locally to an device connected to Mac with Xcode. 
+**Warning:** Due to the way iPadOS/iOS work it’s not possible to distribute an app via the internet thus it needs to be compiled and deployed locally to an device connected to a Mac with Xcode. 
 
-If you still want to try….
 
 ## Required
-- iPad (preferred), iPhone running 14.5 at least
+- iPad (preferred), iPhone running at least iOS/iPadOS 14.5
 - a Mac with Xcode and brew installed
 - an Apple developer account
- 
 
-On a Mac
-- install sdl2 via brew: brew install sdl2
-- checkout repo from terminal with: git clone https://github.com/baumhoto/gzdoom.git
-- open xcode project in gzdoom/gzdoom/gzdoom.xcodeproj
-- adjust developemt team
-- deploy to device
-- start app first time it will show an error message about missing gamedata. After the dialog is closed the app will quit, but there should be a gzdoom folder in the Files App under "On my iPad". there copy all the files from the support folder inside the gzdoom/support folder
-- afterwards add an IWAD file of your choice e.g doom.wad or heretic.wad etc. 
-- Start app again. Controlling the menu via keyboard works. Start game and use WSAD/mouse to run game. Currently saving is an issue as text input is not working
+
+## prerequisites
+* install sdl2 via brew: brew install sdl2
+* checkout repo from terminal with: git clone https://github.com/baumhoto/gzdoom.git
+
+* open xcode project in gzdoom/gzdoom/gzdoom.xcodeproj
+* adjust team and bundle identifier under
+	![gzDoom xcode](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_xcode.jpg)
+* deploy to device
+* start app first time it will show an error message about missing gamedata. After the dialog is closed the app will quit, but there should be a gzdoom folder in the Files App under "On my iPad".
+![gzDoom folder](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_folder.jpg)
+
+* Copy all the files/folders from the gzdoom/gzdoom/support folder here and add an IWAD file of your choice e.g doom.wad or heretic.wad etc.  afterwards folder contents should look like this
+![gzDoom folder contents](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_folder_contents.jpg)
+
+* Start app again. Start game and use WSAD/mouse to run game or configure gamepad.
+
+**Full options menu is available but some changes might not work or break it**
+
+## adding addional datafiles
+in the gzdoom-folder in "On my iPad" is a config folder which contains the gzdoom configuration file *gzdoom.ini*. This is the usual zdoom config file. To add an additional wad or pk3 file use a path like this e.g. the lights.pk3 file 
+
+*Path=$HOME/Documents/lights.pk3
+
+
+![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_config.jpg)
+
+
