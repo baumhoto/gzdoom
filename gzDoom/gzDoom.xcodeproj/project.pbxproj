@@ -12,6 +12,12 @@
 		D204362D26A4B1DD009A4A01 /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; };
 		D204362E26A4B1DD009A4A01 /* libMoltenVK.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D22CBD7826A58938008B9326 /* SDL_uikitviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */; };
+		D2497EBF26B1309500A84690 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EBE26B12FAF00A84690 /* libsndfile.a */; };
+		D2497EC126B1327600A84690 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EC026B1326B00A84690 /* libogg.a */; };
+		D2497EC426B133A200A84690 /* libvorbisenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EC226B1339600A84690 /* libvorbisenc.a */; };
+		D2497EC526B133A200A84690 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EC326B1339700A84690 /* libvorbis.a */; };
+		D2497EC726B134CA00A84690 /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EC626B134C100A84690 /* libFLAC.a */; };
+		D2497EC926B1358700A84690 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EC826B1357C00A84690 /* libopus.a */; };
 		D259774526A299D4003023E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D259774426A299D4003023E3 /* Assets.xcassets */; };
 		D259774826A299D4003023E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D259774626A299D4003023E3 /* LaunchScreen.storyboard */; };
 		D2597BDC26A29A04003023E3 /* glnodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D259775126A29A03003023E3 /* glnodes.cpp */; };
@@ -450,8 +456,8 @@
 		D26709A426A2F404006BEFE8 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D26709A326A2F3F3006BEFE8 /* libjpeg.a */; };
 		D26709A526A2F404006BEFE8 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D26709A226A2F3F3006BEFE8 /* libz.a */; };
 		D26709A626A2F404006BEFE8 /* libbz2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D26709A126A2F3F3006BEFE8 /* libbz2.a */; };
+		D272A2FB26B09FFD0039A736 /* libzmusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8481F26A317A00067CED1 /* libzmusic.a */; };
 		D2A31CF226A2C92B000E65C3 /* xlat_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D2A31CF026A2C92B000E65C3 /* xlat_parser.c */; };
-		D2C8482026A317AD0067CED1 /* libzmusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8481F26A317A00067CED1 /* libzmusic.a */; };
 		D2C8482226A319000067CED1 /* zstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C8482126A319000067CED1 /* zstring.cpp */; };
 		D2C8482626A31CB70067CED1 /* findfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C8482526A31CB70067CED1 /* findfile.cpp */; };
 		D2C8482826A31DEF0067CED1 /* x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2C8482726A31DEF0067CED1 /* x86.cpp */; };
@@ -471,9 +477,7 @@
 		D2D0034026A2D57E0002D9A5 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0033F26A2D57E0002D9A5 /* GameController.framework */; };
 		D2D0034226A2D5850002D9A5 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034126A2D5840002D9A5 /* Metal.framework */; };
 		D2D0034426A2D58A0002D9A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034326A2D58A0002D9A5 /* UIKit.framework */; };
-		D2D0034A26A2D5AE0002D9A5 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034826A2D59C0002D9A5 /* libogg.a */; };
 		D2D0034B26A2D5AE0002D9A5 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034726A2D59C0002D9A5 /* libSDL2.a */; };
-		D2D0034C26A2D5AE0002D9A5 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034626A2D59C0002D9A5 /* libvorbis.a */; };
 		D2D0034E26A2D7890002D9A5 /* libglslang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034D26A2D77A0002D9A5 /* libglslang.a */; };
 		D2D0035026A2E1590002D9A5 /* liblzma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0034F26A2E1460002D9A5 /* liblzma.a */; };
 		D2D0035426A2E5A30002D9A5 /* libgdtoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035326A2E5920002D9A5 /* libgdtoa.a */; };
@@ -498,13 +502,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D204362626A4AF97009A4A01 /* libopenal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopenal.dylib; path = libs/libopenal.dylib; sourceTree = "<group>"; };
 		D204362926A4B021009A4A01 /* libopenal.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopenal.1.dylib; path = libs/libopenal.1.dylib; sourceTree = "<group>"; };
 		D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMoltenVK.dylib; path = libs/libMoltenVK.dylib; sourceTree = "<group>"; };
 		D213F77C26A2C055000970A2 /* PoolAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PoolAlloc.h; path = ../libraries/glslang/glslang/Include/PoolAlloc.h; sourceTree = "<group>"; };
 		D213F77D26A2C378000970A2 /* sc_man_scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sc_man_scanner.h; path = ../build2/src/sc_man_scanner.h; sourceTree = "<group>"; };
 		D22CBD7626A58938008B9326 /* gzDoom-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gzDoom-Bridging-Header.h"; sourceTree = "<group>"; };
 		D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDL_uikitviewcontroller.swift; sourceTree = "<group>"; };
+		D2497EBE26B12FAF00A84690 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = libs/libsndfile.a; sourceTree = "<group>"; };
+		D2497EC026B1326B00A84690 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = libs/libogg.a; sourceTree = "<group>"; };
+		D2497EC226B1339600A84690 /* libvorbisenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisenc.a; path = libs/libvorbisenc.a; sourceTree = "<group>"; };
+		D2497EC326B1339700A84690 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = libs/libvorbis.a; sourceTree = "<group>"; };
+		D2497EC626B134C100A84690 /* libFLAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFLAC.a; path = libs/libFLAC.a; sourceTree = "<group>"; };
+		D2497EC826B1357C00A84690 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = libs/libopus.a; sourceTree = "<group>"; };
 		D259773826A299D4003023E3 /* gzDoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gzDoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D259774426A299D4003023E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D259774726A299D4003023E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1366,6 +1375,7 @@
 		D26709A126A2F3F3006BEFE8 /* libbz2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbz2.a; path = libs/libbz2.a; sourceTree = "<group>"; };
 		D26709A226A2F3F3006BEFE8 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = libs/libz.a; sourceTree = "<group>"; };
 		D26709A326A2F3F3006BEFE8 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = libs/libjpeg.a; sourceTree = "<group>"; };
+		D285608E26B08F5C00AA2E54 /* libsndfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsndfile.1.dylib; path = libs/libsndfile.1.dylib; sourceTree = "<group>"; };
 		D2A31CF026A2C92B000E65C3 /* xlat_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlat_parser.c; sourceTree = "<group>"; };
 		D2A31CF126A2C92B000E65C3 /* xlat_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlat_parser.h; sourceTree = "<group>"; };
 		D2A31CF326A2CAEF000E65C3 /* tarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tarray.h; sourceTree = "<group>"; };
@@ -1394,16 +1404,14 @@
 		D2D0033F26A2D57E0002D9A5 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		D2D0034126A2D5840002D9A5 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		D2D0034326A2D58A0002D9A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D2D0034526A2D59C0002D9A5 /* libMoltenVK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMoltenVK.a; path = libs/libMoltenVK.a; sourceTree = "<group>"; };
-		D2D0034626A2D59C0002D9A5 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis.a; path = libs/libvorbis.a; sourceTree = "<group>"; };
 		D2D0034726A2D59C0002D9A5 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = libs/libSDL2.a; sourceTree = "<group>"; };
-		D2D0034826A2D59C0002D9A5 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg.a; path = libs/libogg.a; sourceTree = "<group>"; };
 		D2D0034D26A2D77A0002D9A5 /* libglslang.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglslang.a; path = libs/libglslang.a; sourceTree = "<group>"; };
 		D2D0034F26A2E1460002D9A5 /* liblzma.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblzma.a; path = libs/liblzma.a; sourceTree = "<group>"; };
 		D2D0035126A2E5920002D9A5 /* libSPIRV.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSPIRV.a; path = libs/libSPIRV.a; sourceTree = "<group>"; };
 		D2D0035226A2E5920002D9A5 /* libOGLCompiler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOGLCompiler.a; path = libs/libOGLCompiler.a; sourceTree = "<group>"; };
 		D2D0035326A2E5920002D9A5 /* libgdtoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgdtoa.a; path = libs/libgdtoa.a; sourceTree = "<group>"; };
 		D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D2DEE1F926B0A9B000BC59A8 /* libvorbisenc.2.0.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbisenc.2.0.12.dylib; path = libs/libvorbisenc.2.0.12.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1412,24 +1420,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D0033A26A2D4DA0002D9A5 /* CoreGraphics.framework in Frameworks */,
+				D272A2FB26B09FFD0039A736 /* libzmusic.a in Frameworks */,
 				D204362D26A4B1DD009A4A01 /* libMoltenVK.dylib in Frameworks */,
-				D2C8482026A317AD0067CED1 /* libzmusic.a in Frameworks */,
 				D2D0034426A2D58A0002D9A5 /* UIKit.framework in Frameworks */,
 				D2D0034026A2D57E0002D9A5 /* GameController.framework in Frameworks */,
+				D2497EC726B134CA00A84690 /* libFLAC.a in Frameworks */,
 				D2DAA1A626A3D22A00169AEF /* OpenGLES.framework in Frameworks */,
-				D2D0034A26A2D5AE0002D9A5 /* libogg.a in Frameworks */,
+				D2497EC526B133A200A84690 /* libvorbis.a in Frameworks */,
 				D2D0033E26A2D5760002D9A5 /* CoreMotion.framework in Frameworks */,
+				D2497EC926B1358700A84690 /* libopus.a in Frameworks */,
 				D26709A026A2EAD5006BEFE8 /* libOSDependent.a in Frameworks */,
 				D2D0033826A2D4D30002D9A5 /* CoreAudio.framework in Frameworks */,
 				D2D0035626A2E5A30002D9A5 /* libSPIRV.a in Frameworks */,
 				D2D0035526A2E5A30002D9A5 /* libOGLCompiler.a in Frameworks */,
-				D2D0034C26A2D5AE0002D9A5 /* libvorbis.a in Frameworks */,
 				D2D0035026A2E1590002D9A5 /* liblzma.a in Frameworks */,
 				D26709A526A2F404006BEFE8 /* libz.a in Frameworks */,
+				D2497EC426B133A200A84690 /* libvorbisenc.a in Frameworks */,
 				D2D0033C26A2D4E20002D9A5 /* CoreHaptics.framework in Frameworks */,
 				D26709A426A2F404006BEFE8 /* libjpeg.a in Frameworks */,
+				D2497EBF26B1309500A84690 /* libsndfile.a in Frameworks */,
 				D2D0034B26A2D5AE0002D9A5 /* libSDL2.a in Frameworks */,
 				D2D0034E26A2D7890002D9A5 /* libglslang.a in Frameworks */,
+				D2497EC126B1327600A84690 /* libogg.a in Frameworks */,
 				D2D0033626A2D4CC0002D9A5 /* AVFoundation.framework in Frameworks */,
 				D2D0034226A2D5850002D9A5 /* Metal.framework in Frameworks */,
 				D2D0033426A2D4C60002D9A5 /* AudioToolbox.framework in Frameworks */,
@@ -3011,9 +3023,16 @@
 		D2D0033226A2D4C60002D9A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2497EC826B1357C00A84690 /* libopus.a */,
+				D2497EC626B134C100A84690 /* libFLAC.a */,
+				D2497EC326B1339700A84690 /* libvorbis.a */,
+				D2497EC226B1339600A84690 /* libvorbisenc.a */,
+				D2497EC026B1326B00A84690 /* libogg.a */,
+				D2497EBE26B12FAF00A84690 /* libsndfile.a */,
+				D2DEE1F926B0A9B000BC59A8 /* libvorbisenc.2.0.12.dylib */,
+				D285608E26B08F5C00AA2E54 /* libsndfile.1.dylib */,
 				D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */,
 				D204362926A4B021009A4A01 /* libopenal.1.dylib */,
-				D204362626A4AF97009A4A01 /* libopenal.dylib */,
 				D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */,
 				D2C8482326A31C100067CED1 /* OpenAL.framework */,
 				D2C8481F26A317A00067CED1 /* libzmusic.a */,
@@ -3026,10 +3045,7 @@
 				D2D0035126A2E5920002D9A5 /* libSPIRV.a */,
 				D2D0034F26A2E1460002D9A5 /* liblzma.a */,
 				D2D0034D26A2D77A0002D9A5 /* libglslang.a */,
-				D2D0034526A2D59C0002D9A5 /* libMoltenVK.a */,
-				D2D0034826A2D59C0002D9A5 /* libogg.a */,
 				D2D0034726A2D59C0002D9A5 /* libSDL2.a */,
-				D2D0034626A2D59C0002D9A5 /* libvorbis.a */,
 				D2D0034326A2D58A0002D9A5 /* UIKit.framework */,
 				D2D0034126A2D5840002D9A5 /* Metal.framework */,
 				D2D0033F26A2D57E0002D9A5 /* GameController.framework */,
