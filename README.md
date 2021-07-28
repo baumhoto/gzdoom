@@ -1,8 +1,8 @@
 # GZDoom fork for iPadOS
 
-Be warned this is a WIP  and there is lots of stuff that might break but it runs and can be controlled via mouse/keyboard/gamepad on iPadOs. You need to compile/deploy it yourself.
+Be warned this is a WIP  and there is lots of stuff that might break but it runs and can be controlled via mouse/keyboard/gamepad on iPadOs. **You need to compile/deploy it yourself**.
 
-[Build/Install instructions](https://github.com/baumhoto/gzdoom/blob/master/INSTALL.MD)
+[Build/Install instructions](https://github.com/baumhoto/gzdoom/blob/master/INSTALL.md)
 
 ![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_ipad.jpg)
 

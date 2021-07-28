@@ -4,9 +4,9 @@ I’ve been recently going through the process of getting gzDoom to run on iPadO
 
 ## Some warnings
 
-**Warning:** This a a very bare bones port where stuff is missing (no touch support) or might be broken, but it works on iPadOs with an external mouse and keyboard (tested with Smart-Keyboard, Magic Keyboard and bluetooth mouse) and gamepad (tested with XBox Controller). 
+**Warning:** This is WIP where stuff is missing (no touch support) or might break, but it works on iPadOs with an external mouse and keyboard (tested with Smart-Keyboard, Magic Keyboard and bluetooth mouse) and gamepad (tested with XBox Controller). 
 
-**Warning:** iOS.  Technically it works but i just ran it a few times. As no touch input is supported you need a bluetooth keyboard/mouse to naviate the menu. I ran into some crashed on iOS, so 
+**Warning:** iOS.  Technically it works but i just ran it a few times. As no touch input is supported you need a bluetooth keyboard/mouse to naviate the menu. I ran into one crash when i did some quick tests....
 
 **Warning:** Due to the way iPadOS/iOS work it’s not possible to distribute an app via the internet thus it needs to be compiled and deployed locally to an device connected to a Mac with Xcode. 
 
@@ -38,9 +38,10 @@ I’ve been recently going through the process of getting gzDoom to run on iPadO
 ## adding addional datafiles
 in the gzdoom-folder in "On my iPad" is a config folder which contains the gzdoom configuration file *gzdoom.ini*. This is the usual zdoom config file. To add an additional wad or pk3 file use a path like this e.g. the lights.pk3 file 
 
-*Path=$HOME/Documents/lights.pk3
+*Path=$HOME/Documents/lights.pk3*
 
 
+Here is an example configuration:
 ![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_config.jpg)
 
 
