@@ -11,6 +11,9 @@
 		D204362B26A4B021009A4A01 /* libopenal.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D204362926A4B021009A4A01 /* libopenal.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D204362D26A4B1DD009A4A01 /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; };
 		D204362E26A4B1DD009A4A01 /* libMoltenVK.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D2051E8726B1547C00866A8A /* libfluidsynth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2051E8626B1546E00866A8A /* libfluidsynth.a */; };
+		D2051E8926B1699300866A8A /* libglib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2051E8826B1698700866A8A /* libglib.a */; };
+		D2051E8B26B16A0200866A8A /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2051E8A26B169F200866A8A /* libintl.a */; };
 		D22CBD7826A58938008B9326 /* SDL_uikitviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22CBD7726A58938008B9326 /* SDL_uikitviewcontroller.swift */; };
 		D2497EBF26B1309500A84690 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EBE26B12FAF00A84690 /* libsndfile.a */; };
 		D2497EC126B1327600A84690 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2497EC026B1326B00A84690 /* libogg.a */; };
@@ -504,6 +507,11 @@
 /* Begin PBXFileReference section */
 		D204362926A4B021009A4A01 /* libopenal.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopenal.1.dylib; path = libs/libopenal.1.dylib; sourceTree = "<group>"; };
 		D204362C26A4B1DD009A4A01 /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMoltenVK.dylib; path = libs/libMoltenVK.dylib; sourceTree = "<group>"; };
+		D2051E8626B1546E00866A8A /* libfluidsynth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfluidsynth.a; path = libs/libfluidsynth.a; sourceTree = "<group>"; };
+		D2051E8826B1698700866A8A /* libglib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglib.a; path = libs/libglib.a; sourceTree = "<group>"; };
+		D2051E8A26B169F200866A8A /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libintl.a; path = libs/libintl.a; sourceTree = "<group>"; };
+		D2051E8C26B16A4300866A8A /* libmpg123.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmpg123.a; path = libs/libmpg123.a; sourceTree = "<group>"; };
+		D2051E8E26B17B7900866A8A /* libiconv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiconv.a; path = libs/libiconv.a; sourceTree = "<group>"; };
 		D213F77C26A2C055000970A2 /* PoolAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PoolAlloc.h; path = ../libraries/glslang/glslang/Include/PoolAlloc.h; sourceTree = "<group>"; };
 		D213F77D26A2C378000970A2 /* sc_man_scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sc_man_scanner.h; path = ../build2/src/sc_man_scanner.h; sourceTree = "<group>"; };
 		D22CBD7626A58938008B9326 /* gzDoom-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gzDoom-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -1425,6 +1433,7 @@
 				D2D0034426A2D58A0002D9A5 /* UIKit.framework in Frameworks */,
 				D2D0034026A2D57E0002D9A5 /* GameController.framework in Frameworks */,
 				D2497EC726B134CA00A84690 /* libFLAC.a in Frameworks */,
+				D2051E8B26B16A0200866A8A /* libintl.a in Frameworks */,
 				D2DAA1A626A3D22A00169AEF /* OpenGLES.framework in Frameworks */,
 				D2497EC526B133A200A84690 /* libvorbis.a in Frameworks */,
 				D2D0033E26A2D5760002D9A5 /* CoreMotion.framework in Frameworks */,
@@ -1432,10 +1441,12 @@
 				D26709A026A2EAD5006BEFE8 /* libOSDependent.a in Frameworks */,
 				D2D0033826A2D4D30002D9A5 /* CoreAudio.framework in Frameworks */,
 				D2D0035626A2E5A30002D9A5 /* libSPIRV.a in Frameworks */,
+				D2051E8726B1547C00866A8A /* libfluidsynth.a in Frameworks */,
 				D2D0035526A2E5A30002D9A5 /* libOGLCompiler.a in Frameworks */,
 				D2D0035026A2E1590002D9A5 /* liblzma.a in Frameworks */,
 				D26709A526A2F404006BEFE8 /* libz.a in Frameworks */,
 				D2497EC426B133A200A84690 /* libvorbisenc.a in Frameworks */,
+				D2051E8926B1699300866A8A /* libglib.a in Frameworks */,
 				D2D0033C26A2D4E20002D9A5 /* CoreHaptics.framework in Frameworks */,
 				D26709A426A2F404006BEFE8 /* libjpeg.a in Frameworks */,
 				D2497EBF26B1309500A84690 /* libsndfile.a in Frameworks */,
@@ -3023,6 +3034,11 @@
 		D2D0033226A2D4C60002D9A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2051E8E26B17B7900866A8A /* libiconv.a */,
+				D2051E8C26B16A4300866A8A /* libmpg123.a */,
+				D2051E8A26B169F200866A8A /* libintl.a */,
+				D2051E8826B1698700866A8A /* libglib.a */,
+				D2051E8626B1546E00866A8A /* libfluidsynth.a */,
 				D2497EC826B1357C00A84690 /* libopus.a */,
 				D2497EC626B134C100A84690 /* libFLAC.a */,
 				D2497EC326B1339700A84690 /* libvorbis.a */,
