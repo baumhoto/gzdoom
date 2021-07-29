@@ -45,6 +45,7 @@
 #include "i_interface.h"
 #include "engineerrors.h"
 #include "i_interface.h"
+#include "d_net.h"
 
 
 static void I_CheckGUICapture ();
@@ -233,6 +234,12 @@ void MessagePump (const SDL_Event &sev)
 	{
 	case SDL_QUIT:
 		throw CExitEvent(0);
+    
+#ifdef IOS
+        case SDL_APP_WILLENTERBACKGROUND:
+            Net_WriteByte (DEM_PAUSE); // pause game
+            break;
+#endif
 
 	case SDL_WINDOWEVENT:
 		extern void ProcessSDLWindowEvent(const SDL_WindowEvent &);

@@ -56,6 +56,9 @@
 #include "menustate.h"
 #include "i_time.h"
 #include "printf.h"
+#include "d_net.h"
+
+extern    int                paused;
 
 void M_StartControlPanel(bool makeSound, bool scaleoverride = false);
 
@@ -480,7 +483,9 @@ bool M_IsAnimated()
 
 void M_ActivateMenu(DMenu *menu)
 {
+
 	if (menuactive == MENU_Off) menuactive = MENU_On;
+    
 	if (CurrentMenu != nullptr)
 	{
 		if (CurrentMenu->mMouseCapture)
@@ -539,7 +544,6 @@ void M_SetMenu(FName menu, int param)
                     printf("%s", menu.GetChars());
 				}
 #ifdef IOS
-                printf("%s", menu.GetChars());
                 if(strcmp(menu.GetChars(), "Savegamemenu") == 0)
                 {
                     SDL_StartTextInput();
@@ -777,6 +781,12 @@ bool M_Responder (event_t *ev)
 					MenuButtonTickers[mkey] = KEY_REPEAT_DELAY;
 				}
 				CurrentMenu->CallMenuEvent(mkey, fromcontroller);
+                
+                //baumhoto FIXME: get Textinput for Option Search
+                if(mkey == 6 && CurrentMenu && stricmp(CurrentMenu->GetClass()->TypeName.GetChars(), "os_Menu") == 0)
+                {
+                    SDL_StartTextInput();
+                }
 				return true;
 			}
 		}
@@ -789,6 +799,12 @@ bool M_Responder (event_t *ev)
 			// Pop-up menu?
 			if (ev->data1 == KEY_ESCAPE)
 			{
+#ifdef IOS
+    if(paused) { //game can also be unpaused by escape
+        Net_WriteByte (DEM_PAUSE);
+        return true;
+    }
+#endif
 				M_StartControlPanel(true);
 				M_SetMenu(NAME_Mainmenu, -1);
 				return true;
@@ -895,6 +911,8 @@ void M_ClearMenus()
 	if (menuactive == MENU_Off) return;
     
 #ifdef IOS
+    
+    
     if(SDL_IsTextInputActive())
     {
         SDL_StopTextInput();
