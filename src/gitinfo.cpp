@@ -33,8 +33,11 @@
 ** This file is just here so that when gitinfo.h changes, only one source
 ** file needs to be recompiled.
 */
-
+#ifdef IOS
+#include "gitinfo_ios.h"
+#else
 #include "gitinfo.h"
+#endif
 #include "version.h"
 
 const char *GetGitDescription()
