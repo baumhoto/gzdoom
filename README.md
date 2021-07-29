@@ -4,7 +4,7 @@ Be warned this is a WIP  and there is lots of stuff that might break but it runs
 
 [Build/Install instructions](https://github.com/baumhoto/gzdoom/blob/master/INSTALL.md)
 
-![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_ipad.jpg)
+![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom-iOS/github/gzdoom_ipad.jpg)
 
 
 # Welcome to GZDoom!

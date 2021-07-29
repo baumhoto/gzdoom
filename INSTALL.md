@@ -23,13 +23,13 @@ I’ve been recently going through the process of getting gzDoom to run on iPadO
 
 * open xcode project in gzdoom/gzdoom-ios/gzdoom.xcodeproj
 * adjust team and bundle identifier under
-	![gzDoom xcode](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_xcode.jpg)
+	![gzDoom xcode](https://github.com/baumhoto/gzdoom/blob/master/gzDoom-iOS/github/gzdoom_xcode.jpg)
 * deploy to device
 * start app first time it will show an error message about missing gamedata. After the dialog is closed the app will quit, but there should be a gzdoom folder in the Files App under "On my iPad".
-![gzDoom folder](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_folder.jpg)
+![gzDoom folder](https://github.com/baumhoto/gzdoom/blob/master/gzDoom-iOS/github/gzdoom_folder.jpg)
 
 * Copy all the files/folders from the gzdoom/gzdoom/support folder here and add an IWAD file of your choice e.g doom.wad or heretic.wad etc.  afterwards folder contents should look like this
-![gzDoom folder contents](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_folder_contents.jpg)
+![gzDoom folder contents](https://github.com/baumhoto/gzdoom/blob/master/gzDoom-iOS/github/gzdoom_folder_contents.jpg)
 
 * Start app again. Start game and use WSAD/mouse to run game or configure gamepad.
 
@@ -44,7 +44,7 @@ if you had an subfolder *wads* in the gzDoom folder it would be
 *Path=$HOME/Documents/wads/mywad.wad
 
 Here is an example configuration with some mods:
-![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom/github/gzdoom_config.jpg)
+![gzDoom config](https://github.com/baumhoto/gzdoom/blob/master/gzDoom-iOS/github/gzdoom_config.jpg)
 
 
 For now you need it will pick the first IWAD it finds thus only one in the main gzDoom-Dir
