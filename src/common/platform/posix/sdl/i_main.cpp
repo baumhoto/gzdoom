@@ -52,6 +52,7 @@
 #include "i_system.h"
 #include "i_interface.h"
 #include "printf.h"
+#include "pl_ios.h"
 
 // MACROS ------------------------------------------------------------------
 
@@ -171,9 +172,26 @@ int main (int argc, char **argv)
 	}
 
 	printf("\n");
-	
-    Args = new FArgs(argc, argv);
 
+#ifdef IOS
+    char *userCommandLine = GetUserCommandLineFromSettings();
+    if(userCommandLine != NULL) {
+        char* userSettings_argv[256];
+        int argIndex = 1;
+        char * token = strtok(userCommandLine, " ");
+        while( token != NULL ) {
+            userSettings_argv[argIndex] = token;
+            argIndex++;
+            token = strtok(NULL, " ");
+        }
+        Args = new FArgs(argIndex, userSettings_argv);
+    }
+    else {
+        Args = new FArgs(argc, argv);
+    }
+#else
+    Args = new FArgs(argc, argv);
+#endif
     char dummy[PATH_MAX];
 	// Should we even be doing anything with progdir on Unix systems?
 	char program[PATH_MAX];
@@ -207,3 +225,41 @@ int main (int argc, char **argv)
     
 	return 0;
 }
+
+//void Sys_ExpandCommandLine(const char* commandLine)
+//{
+//    int sys_argc = 0;
+//    char **sys_argv;
+//    
+//    size_t length = strlen(commandLine);
+//    
+//    char* argstart = commandline;
+//
+//    //memset(sys_argv, 0, MAX_NUM_ARGVS * sizeof(char*));
+//    
+//    size_t i = 0;
+//
+//    while(sys_commandline[i] != 0)
+//    {
+//        if (sys_commandline[i] <= 32)
+//        {
+//            if (!atwhitespace)
+//            {
+//                sys_argv[sys_argc] = argstart;
+//                sys_argc++;
+//                sys_commandline[i] = 0;
+//                atwhitespace = true;
+//            }
+//        }
+//        else if (atwhitespace)
+//        {
+//            argstart = sys_commandline + i;
+//            atwhitespace = false;
+//        }
+//        
+//        i++;
+//    }
+//
+//    sys_argv[sys_argc] = argstart;
+//    sys_argc++;
+//}

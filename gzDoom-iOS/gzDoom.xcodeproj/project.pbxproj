@@ -487,6 +487,7 @@
 		D2D0035526A2E5A30002D9A5 /* libOGLCompiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035226A2E5920002D9A5 /* libOGLCompiler.a */; };
 		D2D0035626A2E5A30002D9A5 /* libSPIRV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D0035126A2E5920002D9A5 /* libSPIRV.a */; };
 		D2DAA1A626A3D22A00169AEF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */; };
+		D2E7BA7326B2A73E002C0DD7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2E7BA7226B2A73E002C0DD7 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1420,6 +1421,8 @@
 		D2D0035326A2E5920002D9A5 /* libgdtoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgdtoa.a; path = libs/libgdtoa.a; sourceTree = "<group>"; };
 		D2DAA1A526A3D22A00169AEF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D2DEE1F926B0A9B000BC59A8 /* libvorbisenc.2.0.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbisenc.2.0.12.dylib; path = libs/libvorbisenc.2.0.12.dylib; sourceTree = "<group>"; };
+		D2E7BA7226B2A73E002C0DD7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D2E7BA7426B2B278002C0DD7 /* pl_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pl_ios.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1492,6 +1495,7 @@
 				D259774426A299D4003023E3 /* Assets.xcassets */,
 				D259774626A299D4003023E3 /* LaunchScreen.storyboard */,
 				D259774926A299D4003023E3 /* Info.plist */,
+				D2E7BA7226B2A73E002C0DD7 /* Settings.bundle */,
 			);
 			path = gzDoom;
 			sourceTree = "<group>";
@@ -2996,6 +3000,7 @@
 			isa = PBXGroup;
 			children = (
 				D2638C6526ADA0C800BAA9BE /* pl_ios.mm */,
+				D2E7BA7426B2B278002C0DD7 /* pl_ios.h */,
 			);
 			path = uikit;
 			sourceTree = "<group>";
@@ -3133,6 +3138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E7BA7326B2A73E002C0DD7 /* Settings.bundle in Resources */,
 				D259774826A299D4003023E3 /* LaunchScreen.storyboard in Resources */,
 				D2597D0026A29A04003023E3 /* sc_man_scanner.re in Resources */,
 				D259774526A299D4003023E3 /* Assets.xcassets in Resources */,
