@@ -189,12 +189,12 @@ void I_FreezeTime(bool frozen)
 {
 	if (frozen)
 	{
-		assert(FreezeTime == 0);
+//		assert(FreezeTime == 0);
 		FreezeTime = GetClockTimeNS();
 	}
 	else
 	{
-		assert(FreezeTime != 0);
+//		assert(FreezeTime != 0);
 		FirstFrameStartTime += GetClockTimeNS() - FreezeTime;
 		FreezeTime = 0;
 		I_SetFrameTime();

@@ -104,7 +104,7 @@ void FAutoSeg::Initialize()
 
 	unsigned long size;
 
-	if (uint8_t *const section = getsectiondata(&_mh_execute_header, AUTOSEG_MACH_SEGMENT, name, &size))
+	if (uint8_t *const section = getsectiondata(&_mh_dylib_header, AUTOSEG_MACH_SEGMENT, name, &size))
 	{
 		begin = reinterpret_cast<void **>(section);
 		end = reinterpret_cast<void **>(section + size);
